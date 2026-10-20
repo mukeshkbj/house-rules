@@ -38,15 +38,25 @@ New bills are judged against the policy the founder signed, not a freshly mined 
 
 1. **Sign the policy once.** In the app, approve rules (and edit limits if needed), then click **💾 Save policy**.
    This writes `data/policy_seapoint.json` with the rules, version and audit log. **📂 Load saved** restores it.
-2. **Refresh the data.** Pull the latest unpaid invoices, queued payments and paid transactions from Seapoint into
-   `data/raw/`, then run `python data/build_seapoint_snapshot.py`. Paid history matters: it is how a new invoice for a
-   bill already collected by direct debit gets caught.
-3. **Review only what's new.** `python -m house_rules.review_new` (add `--live` for the Claude Guardian). Bills already
-   reviewed are skipped (`data/seen_bills.json`), each run writes `data/reviews/review_<time>.json`, and the run is
-   added to the policy's audit log. Nothing is paid or changed in Seapoint.
+2. **Refresh the data.** A Claude session with the Seapoint connector follows [prompts/seapoint_pull.md](prompts/seapoint_pull.md):
+   it writes `data/raw/`, rebuilds the snapshot and runs the review. It can run on a schedule.
+3. **Review only what's new.** `python -m house_rules.review_new` (add `--live` for the Claude Guardian). Bills and payroll
+   findings already reported are skipped (`data/seen_bills.json`), each run writes `data/reviews/review_<time>.json`, and the
+   run is added to the policy's audit log. Nothing is paid or changed in Seapoint.
 
-Not automated yet: the Seapoint pull in step 2 needs a Seapoint MCP token (`python -m house_rules.seapoint --collect`)
-or a Claude session with the Seapoint connector. Steps 2–3 can then run on a schedule.
+### Seapoint features used
+
+| Seapoint data | Used for |
+|---|---|
+| `query_transaction_participants` | Supplier list with Seapoint's own ids and categories, so invoices map to known suppliers instead of by name guessing |
+| `query_invoices` (paid and unpaid) | Open bills, plus supplier VAT and company numbers; paid invoices are matched to their bank transaction (`transaction_id`) |
+| `query_transactions` (bank and card) | Payment history: catches bills already collected by direct debit or already paid by card |
+| `query_payments` | The real payment queue, including payments drafted to a one-off payee rather than a saved one |
+| `query_payroll` | Pay runs: a period paid twice (PAY-1), a run paid before its period (PAY-2), a changed pay account (PAY-3) |
+
+Hard checks added from this data: **INV-7** invoice number already paid, **INV-8** company or VAT number differs from the
+one on file, **INV-9** VAT number from a different country than the supplier's address, plus card payments and
+"exact amount paid within 5 days of the invoice date" in the duplicate check.
 
 ## Run it (offline, no keys needed)
 
@@ -114,7 +124,7 @@ Data: Northstar Labs (org "Hackathon - PolicyAgent"), 187 bank payments Apr–Oc
 4. **Attack (30s)** — *Launch attack round*. 9/10 caught: duplicate, lookalike "Snowfiake", new bank details,
    "pre-approved by CFO" injection, split invoice. One gets through: a second in-range Fathom invoice in October.
 5. **Heal (30s)** — *Propose a policy patch* → "one invoice per payroll & staffing payee per month". The backtest flags 6 past
-   payments, and they're real: **September salaries were paid twice** (18th and 25th), £11,800 overpaid. Approve → replay → caught. 10/10, policy v40.
+   payments, and they're real: **two salary runs went out in September** (18th and 25th): Seapoint's payroll shows October was paid early, and a new draft October run would pay it again. Approve → replay → caught. 10/10, policy v40.
 6. **Close (10s)** — "Agents write the policy, attack the policy and fix the policy. Code has the last word on
    strictness, and a human signs every change."
 

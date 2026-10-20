@@ -6,214 +6,556 @@
   "monthly_burn": 141388.62,
   "vendors": [
     {
+      "vendor_id": "ven_6wpd73gbvgzkxftb0mfg4yt0t5",
+      "name": "Amazon Business",
+      "category": "office expenses",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_4s680je4kak85ds5sdqprpmrf2",
+      "name": "Amazon UK",
+      "category": "office expenses",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
       "vendor_id": "ven_4mpj77cpayp2ax1z2dej7skv4f",
       "name": "Amazon Web Services",
       "category": "hosting & infrastructure",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_56tqf2q1323c4exjqd6qedd5d4",
       "name": "Anthropic",
       "category": "hosting & infrastructure",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_2eqg36re4ydg45s8jvryfzxchw",
+      "name": "Apple Store",
+      "category": "capital investments",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_7jxrakrs8am3vn7pdcv11sv6qm",
+      "name": "BCS, The Chartered Institute for IT",
+      "category": "subscriptions",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_74j6t25sz91ngwpp7eqqksy1j6",
       "name": "Clearview Media",
       "category": "marketing & advertising",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": "10228461",
+      "vat_number": "GB 559 2201 63"
     },
     {
       "vendor_id": "ven_1tx7c1dy8hwjq8wmjt1zn44cpz",
       "name": "Connolly Accountants",
       "category": "legal & professional fees",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_4d1pfpzvhfk4vktsa01nvq3c0c",
+      "name": "Currys",
+      "category": "office expenses",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_27gt5m50avc4jf4xsbsm442s51",
       "name": "Deel UK Ltd",
       "category": "payroll & benefits",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": "12414983",
+      "vat_number": "GB 355 8810 27"
+    },
+    {
+      "vendor_id": "ven_5p8fgwqp19he50pmd95d1e0ynb",
+      "name": "Deliveroo",
+      "category": "food & dining",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_54ejj5h2e09kvfavt5tb2gtqwe",
+      "name": "Dishoom",
+      "category": "food & dining",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_07pg3dxv75gcd8s29gawrwjqw1",
       "name": "Fathom Talent Partners",
       "category": "payroll & benefits",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_64azex6yej0fc47yzfgrqycmhn",
       "name": "Figma",
       "category": "subscriptions",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_1dqea8mfanhs4a0s0d1s3v9j2t",
+      "name": "GAIL's Bakery",
+      "category": "food & dining",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_0ktg03jhfj8936vqzye97gtwmc",
       "name": "GitHub",
       "category": "subscriptions",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_0qkm3t0psmw52fx5dyeg3bq417",
+      "name": "Google Ads",
+      "category": "marketing & advertising",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_72shef8dfkxpj2f912fvah3etz",
       "name": "Google Cloud",
       "category": "hosting & infrastructure",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_4bxb16afnk0fn36y3xqz0n94df",
+      "name": "Grind",
+      "category": "food & dining",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_3sbfq9ngj8wckk81qm5b7t5x9f",
       "name": "HMRC",
       "category": "sales tax / vat",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_0vzmbzk5ek2vcxdb49b11wvbb6",
+      "name": "HSBC UK",
+      "category": "bank fees",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_49ze0bdyt8eydfy71x5k7zff3e",
+      "name": "Halberd Security",
+      "category": "legal & professional fees",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_055qe33bweaeh9b4krfhr4t21x",
       "name": "Harbourline Logistics",
       "category": "travel & entertainment",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_0k4qsyef6xfby3102hkqerdr6j",
       "name": "Harrison & Webb Solicitors",
       "category": "legal & professional fees",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_7e1w9p7t96jhv12jv0afr5nsep",
+      "name": "Hawksmoor",
+      "category": "food & dining",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_6ct7m6dd316bsjjrhz0fnq0we5",
       "name": "HubSpot",
       "category": "marketing & advertising",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_4te1ehfed1wc0yxf7ygbctbbxk",
       "name": "Isla Fraser",
       "category": "payroll & benefits",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_1ttgrg84csr1njwmfy8p1ecah3",
+      "name": "JetBrains",
+      "category": "subscriptions",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_2e09q4cwqy0cghtvbq5ee5x5wg",
       "name": "Linear",
       "category": "subscriptions",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_57phnje74b2q7s0tp0t65ywgev",
+      "name": "LinkedIn Ads",
+      "category": "marketing & advertising",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_2wr9k60jwyf1ds1mt7gfyybpaw",
+      "name": "Lodgewood Travel",
+      "category": "travel & entertainment",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_63kn5e0tx9w2cy5a9hfs9nmb2m",
       "name": "Meridian Insurance Brokers",
       "category": "legal & professional fees",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_3prd0hp4j5ne0pgs7rd12gzcxq",
+      "name": "Meridian Translations BV",
+      "category": "marketing & advertising",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_3mfv12p81vje7vg2vyw7gt8df4",
+      "name": "Modulr",
+      "category": "bank fees",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_3nfhy1ag98r7r28sssebsd3f7c",
+      "name": "Monmouth Coffee",
+      "category": "food & dining",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_0dcsyvpsmg4jwehmx30d4pvkfm",
+      "name": "NCP",
+      "category": "travel & entertainment",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_4aedgc0qpyhfq6f44wfdk83ny2",
       "name": "Nordhaus Studio BV",
       "category": "marketing & advertising",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_4njn13g2taqreehpg2wdywmk9f",
       "name": "Northwind Facilities",
       "category": "office expenses",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_2b8etb3sabtddjvaza2mhj238t",
       "name": "Notion",
       "category": "subscriptions",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_49ta5x1pwf56k1bvqhzyy9m8e2",
+      "name": "PayPal",
+      "category": "general expenses",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_6h0h80m7sqdfgnmzzzgftgw5r5",
+      "name": "Pinnacle Office Supplies",
+      "category": "office expenses",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_6fhpb3zvf3xfqmhzkpdk8cs7tr",
       "name": "Posturite",
       "category": "capital investments",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": "GB 523 6645 08"
+    },
+    {
+      "vendor_id": "ven_0gac3mssp354exrhgcnnqca4zk",
+      "name": "Premier Inn",
+      "category": "travel & entertainment",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_7prmmma4arvb3rmbdw8qy8vk83",
+      "name": "Pret A Manger",
+      "category": "food & dining",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_6c20xbzr9phrqzyhwg57k3hg3q",
       "name": "Priya Chandra",
       "category": "payroll & benefits",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_015yghk7vaqv5tmtap0hkzjd33",
       "name": "Remote People Ltd",
       "category": "payroll & benefits",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_4pcr5kx4pnwpnas56q096kpnfb",
       "name": "Rhys Owen",
       "category": "payroll & benefits",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_421pwfyx80rnmccs1a4z0xde8t",
       "name": "Sentry",
       "category": "subscriptions",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_5h5xp8810xnx1p325vbksx4zpe",
+      "name": "Sketch London",
+      "category": "travel & entertainment",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_20tshdbaa6cg17hjgq5n2b74dx",
       "name": "Slack Technologies",
       "category": "subscriptions",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_51ndcmr6t0pxjnb349yz4mz08m",
       "name": "Snowflake",
       "category": "hosting & infrastructure",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": "10392719",
+      "vat_number": "GB 226 2981 13"
+    },
+    {
+      "vendor_id": "ven_4thv5a6a71dv8av36rqfk41nat",
+      "name": "Spotify",
+      "category": "subscriptions",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_14j1k7068zzd946heq8qfpmmgv",
+      "name": "Tesco Express",
+      "category": "food & dining",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_1rbqy5wgbrhbnjyh1sbs8zyp78",
+      "name": "The Culpeper",
+      "category": "food & dining",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_2zztzf9c3rrb6f18yrtbkgcvsn",
+      "name": "Trainline",
+      "category": "travel & entertainment",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_4svzbyyj39k4c1n91j480ynbjr",
+      "name": "Uber",
+      "category": "travel & entertainment",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_0873cm97jncrjjjgsbxt5s4nqw",
+      "name": "Uber",
+      "category": "travel & entertainment",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_2am0jebpf1cvgn2edjgzrj95hm",
+      "name": "Uber Eats",
+      "category": "food & dining",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_4t57vk6djtm02m6wns2eqcq70e",
       "name": "Unknown Direct Debit Payee",
       "category": "general expenses",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_1zf7yv8wmfxk7n08d87jp2rdt5",
       "name": "Unknown Office Supplier",
       "category": "office expenses",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_28gavat9ptzafv58fdax9f11yx",
       "name": "Unknown Standing Order Payee",
       "category": "general expenses",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_06nk7514x2gk8b1d7bc36apgv0",
       "name": "Unknown Vendor",
       "category": "general expenses",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_7g21g3yc519yt99ej1ebt6x73y",
       "name": "Vercel",
       "category": "hosting & infrastructure",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": "EU 528 0061 37"
     },
     {
       "vendor_id": "ven_6hxy308d3p8qms2denjw496vfg",
       "name": "Vodafone Business",
       "category": "subscriptions",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": "GB 569 9530 13"
+    },
+    {
+      "vendor_id": "ven_232q9jn7pjzek44jbjnxj0fqaf",
+      "name": "WHSmith",
+      "category": "office expenses",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_3dprxejfxfhwbc5fh8wh6a1qf4",
       "name": "WeWork",
       "category": "rent",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_00mf8y38khcex3pn4pj94dq7ty",
       "name": "WealthKernel",
       "category": "capital investments",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
+    },
+    {
+      "vendor_id": "ven_6k4mgj6w567d87x9etgvredebd",
+      "name": "Wise",
+      "category": "bank fees",
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     },
     {
       "vendor_id": "ven_4a69v9wr7vdmae41a6xbd89jmd",
       "name": "Wren & Fielding LLP",
       "category": "legal & professional fees",
-      "bank_account": null
+      "bank_account": null,
+      "company_number": null,
+      "vat_number": null
     }
   ],
   "transactions": [
@@ -335,6 +677,19 @@
       "bank_account": null
     },
     {
+      "txn_id": "card:ven_2wr9k60jwyf1ds1mt7gfyybpaw:2026-04-09",
+      "vendor_id": "ven_2wr9k60jwyf1ds1mt7gfyybpaw",
+      "vendor_name": "Lodgewood Travel",
+      "amount": 11700,
+      "currency": "GBP",
+      "date": "2026-04-09",
+      "category": "travel & entertainment",
+      "channel": "card",
+      "invoice_number": null,
+      "description": "Lodgewood Travel card payment",
+      "bank_account": null
+    },
+    {
       "txn_id": "txn_0t0sqaeb4fxdsvcketxkre6jtj",
       "vendor_id": "ven_56tqf2q1323c4exjqd6qedd5d4",
       "vendor_name": "Anthropic",
@@ -410,6 +765,19 @@
       "channel": "direct_debit",
       "invoice_number": null,
       "description": "Northwind Facilities - office cleaning",
+      "bank_account": null
+    },
+    {
+      "txn_id": "card:ven_6ct7m6dd316bsjjrhz0fnq0we5:2026-04-14",
+      "vendor_id": "ven_6ct7m6dd316bsjjrhz0fnq0we5",
+      "vendor_name": "HubSpot",
+      "amount": 2030,
+      "currency": "GBP",
+      "date": "2026-04-14",
+      "category": "marketing & advertising",
+      "channel": "card",
+      "invoice_number": null,
+      "description": "HubSpot card payment",
       "bank_account": null
     },
     {
@@ -673,6 +1041,19 @@
       "bank_account": null
     },
     {
+      "txn_id": "card:ven_2wr9k60jwyf1ds1mt7gfyybpaw:2026-05-09",
+      "vendor_id": "ven_2wr9k60jwyf1ds1mt7gfyybpaw",
+      "vendor_name": "Lodgewood Travel",
+      "amount": 10800,
+      "currency": "GBP",
+      "date": "2026-05-09",
+      "category": "travel & entertainment",
+      "channel": "card",
+      "invoice_number": null,
+      "description": "Lodgewood Travel card payment",
+      "bank_account": null
+    },
+    {
       "txn_id": "txn_1gpaqy8r3e5vp2wrq4s8680fbg",
       "vendor_id": "ven_56tqf2q1323c4exjqd6qedd5d4",
       "vendor_name": "Anthropic",
@@ -748,6 +1129,19 @@
       "channel": "direct_debit",
       "invoice_number": null,
       "description": "Northwind Facilities - office cleaning",
+      "bank_account": null
+    },
+    {
+      "txn_id": "card:ven_6ct7m6dd316bsjjrhz0fnq0we5:2026-05-14",
+      "vendor_id": "ven_6ct7m6dd316bsjjrhz0fnq0we5",
+      "vendor_name": "HubSpot",
+      "amount": 2780,
+      "currency": "GBP",
+      "date": "2026-05-14",
+      "category": "marketing & advertising",
+      "channel": "card",
+      "invoice_number": null,
+      "description": "HubSpot card payment",
       "bank_account": null
     },
     {
@@ -998,6 +1392,19 @@
       "bank_account": null
     },
     {
+      "txn_id": "card:ven_2wr9k60jwyf1ds1mt7gfyybpaw:2026-06-09",
+      "vendor_id": "ven_2wr9k60jwyf1ds1mt7gfyybpaw",
+      "vendor_name": "Lodgewood Travel",
+      "amount": 9900,
+      "currency": "GBP",
+      "date": "2026-06-09",
+      "category": "travel & entertainment",
+      "channel": "card",
+      "invoice_number": null,
+      "description": "Lodgewood Travel card payment",
+      "bank_account": null
+    },
+    {
       "txn_id": "txn_52z15546tanexbjgzrgfxksndx",
       "vendor_id": "ven_56tqf2q1323c4exjqd6qedd5d4",
       "vendor_name": "Anthropic",
@@ -1086,6 +1493,19 @@
       "channel": "direct_debit",
       "invoice_number": null,
       "description": "Northwind Facilities - office cleaning",
+      "bank_account": null
+    },
+    {
+      "txn_id": "card:ven_6ct7m6dd316bsjjrhz0fnq0we5:2026-06-14",
+      "vendor_id": "ven_6ct7m6dd316bsjjrhz0fnq0we5",
+      "vendor_name": "HubSpot",
+      "amount": 2480,
+      "currency": "GBP",
+      "date": "2026-06-14",
+      "category": "marketing & advertising",
+      "channel": "card",
+      "invoice_number": null,
+      "description": "HubSpot card payment",
       "bank_account": null
     },
     {
@@ -1349,6 +1769,19 @@
       "bank_account": null
     },
     {
+      "txn_id": "card:ven_2wr9k60jwyf1ds1mt7gfyybpaw:2026-07-09",
+      "vendor_id": "ven_2wr9k60jwyf1ds1mt7gfyybpaw",
+      "vendor_name": "Lodgewood Travel",
+      "amount": 9000,
+      "currency": "GBP",
+      "date": "2026-07-09",
+      "category": "travel & entertainment",
+      "channel": "card",
+      "invoice_number": null,
+      "description": "Lodgewood Travel card payment",
+      "bank_account": null
+    },
+    {
       "txn_id": "txn_3rfs4wr6x28t37w7rk0wwd9c4m",
       "vendor_id": "ven_56tqf2q1323c4exjqd6qedd5d4",
       "vendor_name": "Anthropic",
@@ -1424,6 +1857,19 @@
       "channel": "direct_debit",
       "invoice_number": null,
       "description": "Northwind Facilities - office cleaning",
+      "bank_account": null
+    },
+    {
+      "txn_id": "card:ven_6ct7m6dd316bsjjrhz0fnq0we5:2026-07-14",
+      "vendor_id": "ven_6ct7m6dd316bsjjrhz0fnq0we5",
+      "vendor_name": "HubSpot",
+      "amount": 2180,
+      "currency": "GBP",
+      "date": "2026-07-14",
+      "category": "marketing & advertising",
+      "channel": "card",
+      "invoice_number": null,
+      "description": "HubSpot card payment",
       "bank_account": null
     },
     {
@@ -1687,6 +2133,19 @@
       "bank_account": null
     },
     {
+      "txn_id": "card:ven_2wr9k60jwyf1ds1mt7gfyybpaw:2026-08-09",
+      "vendor_id": "ven_2wr9k60jwyf1ds1mt7gfyybpaw",
+      "vendor_name": "Lodgewood Travel",
+      "amount": 8100,
+      "currency": "GBP",
+      "date": "2026-08-09",
+      "category": "travel & entertainment",
+      "channel": "card",
+      "invoice_number": null,
+      "description": "Lodgewood Travel card payment",
+      "bank_account": null
+    },
+    {
       "txn_id": "txn_43wa92mebkk6e23r8mngm6wnbz",
       "vendor_id": "ven_56tqf2q1323c4exjqd6qedd5d4",
       "vendor_name": "Anthropic",
@@ -1775,6 +2234,19 @@
       "channel": "direct_debit",
       "invoice_number": null,
       "description": "Northwind Facilities - office cleaning",
+      "bank_account": null
+    },
+    {
+      "txn_id": "card:ven_6ct7m6dd316bsjjrhz0fnq0we5:2026-08-14",
+      "vendor_id": "ven_6ct7m6dd316bsjjrhz0fnq0we5",
+      "vendor_name": "HubSpot",
+      "amount": 2930,
+      "currency": "GBP",
+      "date": "2026-08-14",
+      "category": "marketing & advertising",
+      "channel": "card",
+      "invoice_number": null,
+      "description": "HubSpot card payment",
       "bank_account": null
     },
     {
@@ -2064,6 +2536,19 @@
       "bank_account": null
     },
     {
+      "txn_id": "card:ven_2wr9k60jwyf1ds1mt7gfyybpaw:2026-09-09",
+      "vendor_id": "ven_2wr9k60jwyf1ds1mt7gfyybpaw",
+      "vendor_name": "Lodgewood Travel",
+      "amount": 7200,
+      "currency": "GBP",
+      "date": "2026-09-09",
+      "category": "travel & entertainment",
+      "channel": "card",
+      "invoice_number": null,
+      "description": "Lodgewood Travel card payment",
+      "bank_account": null
+    },
+    {
       "txn_id": "txn_0rrd3rtytvtz2s9theq49h99vx",
       "vendor_id": "ven_56tqf2q1323c4exjqd6qedd5d4",
       "vendor_name": "Anthropic",
@@ -2191,6 +2676,19 @@
       "channel": "direct_debit",
       "invoice_number": null,
       "description": "WEWORK - Monthly Desk Rental",
+      "bank_account": null
+    },
+    {
+      "txn_id": "card:ven_6ct7m6dd316bsjjrhz0fnq0we5:2026-09-14",
+      "vendor_id": "ven_6ct7m6dd316bsjjrhz0fnq0we5",
+      "vendor_name": "HubSpot",
+      "amount": 2630,
+      "currency": "GBP",
+      "date": "2026-09-14",
+      "category": "marketing & advertising",
+      "channel": "card",
+      "invoice_number": null,
+      "description": "HubSpot card payment",
       "bank_account": null
     },
     {
@@ -2571,6 +3069,19 @@
       "bank_account": null
     },
     {
+      "txn_id": "card:ven_2wr9k60jwyf1ds1mt7gfyybpaw:2026-10-09",
+      "vendor_id": "ven_2wr9k60jwyf1ds1mt7gfyybpaw",
+      "vendor_name": "Lodgewood Travel",
+      "amount": 6300,
+      "currency": "GBP",
+      "date": "2026-10-09",
+      "category": "travel & entertainment",
+      "channel": "card",
+      "invoice_number": null,
+      "description": "Lodgewood Travel card payment",
+      "bank_account": null
+    },
+    {
       "txn_id": "txn_19y35t17qbf2d64sj3db1k9j1d",
       "vendor_id": "ven_56tqf2q1323c4exjqd6qedd5d4",
       "vendor_name": "Anthropic",
@@ -2651,303 +3162,22 @@
   ],
   "pending_bills": [
     {
-      "bill_id": "evi_23nvzy1efb93qph8kj7bhnh306",
-      "vendor_id": "ven_3dprxejfxfhwbc5fh8wh6a1qf4",
-      "vendor_name": "WeWork UK Ltd",
-      "amount": 2950,
-      "currency": "GBP",
-      "invoice_number": "WW-UK-2026-11-4B",
-      "issue_date": "2026-10-13",
-      "due_date": "2026-11-01",
-      "category": "rent",
-      "description": "WeWork UK Ltd invoice WW-UK-2026-11-4B [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_1zrbf88vg3bpn7y46hpzv9j1ng",
-      "vendor_id": "ven_4a69v9wr7vdmae41a6xbd89jmd",
-      "vendor_name": "Wren & Fielding LLP",
-      "amount": 2150,
-      "currency": "GBP",
-      "invoice_number": "INV-WF-2291",
-      "issue_date": "2026-10-11",
-      "due_date": "2026-11-10",
-      "category": "legal & professional fees",
-      "description": "Wren & Fielding LLP invoice INV-WF-2291 [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_4w57v6qrjpkr56hdfq3mb27rje",
-      "vendor_id": "ven_6ct7m6dd316bsjjrhz0fnq0we5",
-      "vendor_name": "HubSpot UK Ltd",
-      "amount": 2480,
-      "currency": "GBP",
-      "invoice_number": "HS-2026-8120",
-      "issue_date": "2026-10-08",
-      "due_date": "2026-11-07",
-      "category": "marketing & advertising",
-      "description": "HubSpot UK Ltd invoice HS-2026-8120 [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_4hhjd13zgxs1tjr5ddvm4ygaes",
-      "vendor_id": "ven_74j6t25sz91ngwpp7eqqksy1j6",
-      "vendor_name": "Clearview Media Ltd",
-      "amount": 3400,
-      "currency": "GBP",
-      "invoice_number": "CM-2026-114",
-      "issue_date": "2026-10-07",
-      "due_date": "2026-11-06",
-      "category": "marketing & advertising",
-      "description": "Clearview Media Ltd invoice CM-2026-114 [source: EMAIL_SCAN] [payment pi_21wce2r2qh1t9p9hyxgev6vpns drafted to a one-off 'scan' payee, not a saved beneficiary]",
-      "bank_account": "..9047"
-    },
-    {
-      "bill_id": "evi_4067cwsh6q4k5w20a9ny0hbat7",
-      "vendor_id": "new:halberdsecurity",
-      "vendor_name": "Halberd Security Ltd",
-      "amount": 4250,
-      "currency": "GBP",
-      "invoice_number": "HAL-3310",
-      "issue_date": "2026-10-06",
-      "due_date": "2026-11-05",
-      "category": "unknown",
-      "description": "Halberd Security Ltd invoice HAL-3310 (work done in September 2026) [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_2tfw909v91r049jvcx55eetdky",
-      "vendor_id": "new:meridiantranslations",
-      "vendor_name": "Meridian Translations BV",
-      "amount": 1840,
-      "currency": "EUR",
-      "invoice_number": "MT-2026-0442",
-      "issue_date": "2026-10-02",
-      "due_date": "2026-11-01",
-      "category": "unknown",
-      "description": "Meridian Translations BV invoice MT-2026-0442 (country GB, NL VAT number) [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_5xpcwfp7s2xrm8c1dyckg1qh6x",
-      "vendor_id": "ven_1tx7c1dy8hwjq8wmjt1zn44cpz",
-      "vendor_name": "Connolly Accountants Ltd",
-      "amount": 1800,
-      "currency": "GBP",
-      "invoice_number": "CA-2026-0918",
-      "issue_date": "2026-10-05",
-      "due_date": "2026-10-26",
-      "category": "legal & professional fees",
-      "description": "Connolly Accountants Ltd invoice CA-2026-0918 [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_5w5e9aq2vtff0egyrkgbv4xsj9",
+      "bill_id": "evi_04bvwd4jjzhrc3c4ayp4f2vgfd",
       "vendor_id": "ven_055qe33bweaeh9b4krfhr4t21x",
       "vendor_name": "Harbourline Logistics Ltd",
-      "amount": 612.48,
+      "amount": 540,
       "currency": "GBP",
-      "invoice_number": "HL-77120",
-      "issue_date": "2026-10-04",
-      "due_date": "2026-10-25",
+      "invoice_number": "HL-76890",
+      "issue_date": "2026-09-01",
+      "due_date": "2026-09-15",
       "category": "travel & entertainment",
-      "description": "Harbourline Logistics Ltd invoice HL-77120 [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_6xt4bq3kag49wg92ak40rph92g",
-      "vendor_id": "ven_4mpj77cpayp2ax1z2dej7skv4f",
-      "vendor_name": "Amazon Web Services UK Ltd",
-      "amount": 7204.2,
-      "currency": "GBP",
-      "invoice_number": "AWS-INV-45190",
-      "issue_date": "2026-10-10",
-      "due_date": "2026-10-24",
-      "category": "hosting & infrastructure",
-      "description": "Amazon Web Services UK Ltd invoice AWS-INV-45190 [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_4b1rms137v2b91qphkh2nf2gqd",
-      "vendor_id": "ven_20tshdbaa6cg17hjgq5n2b74dx",
-      "vendor_name": "Slack Technologies Ltd",
-      "amount": 486,
-      "currency": "GBP",
-      "invoice_number": "SLK-7188",
-      "issue_date": "2026-10-09",
-      "due_date": "2026-10-23",
-      "category": "subscriptions",
-      "description": "Slack Technologies Ltd invoice SLK-7188 [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_1gxcbna8gmmv1dkmwzm2d3kfzk",
-      "vendor_id": "ven_4njn13g2taqreehpg2wdywmk9f",
-      "vendor_name": "Northwind Facilities Ltd",
-      "amount": 975,
-      "currency": "GBP",
-      "invoice_number": "NW-88431",
-      "issue_date": "2026-09-23",
-      "due_date": "2026-10-07",
-      "category": "office expenses",
-      "description": "Northwind Facilities Ltd invoice NW-88431 [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_07y5gw648700vz9qehp1p6tzvv",
-      "vendor_id": "ven_015yghk7vaqv5tmtap0hkzjd33",
-      "vendor_name": "Remote People Ltd",
-      "amount": 33600,
-      "currency": "GBP",
-      "invoice_number": "RP-2026-10-118",
-      "issue_date": "2026-10-10",
-      "due_date": "2026-10-25",
-      "category": "payroll & benefits",
-      "description": "Remote People Ltd invoice RP-2026-10-118 (net 33,400, VAT 200 at stated 20%) [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_1cpfhxydzwqhxy5qq618jspwyz",
-      "vendor_id": "ven_74j6t25sz91ngwpp7eqqksy1j6",
-      "vendor_name": "Clearview Media Ltd",
-      "amount": 3400,
-      "currency": "GBP",
-      "invoice_number": "CM-2026-114",
-      "issue_date": "2026-10-07",
-      "due_date": "2026-11-06",
-      "category": "marketing & advertising",
-      "description": "Clearview Media Ltd invoice CM-2026-114 [source: UPLOAD]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_32t9rmxzv341gwfy2sdcjbbqmq",
-      "vendor_id": "ven_07pg3dxv75gcd8s29gawrwjqw1",
-      "vendor_name": "Fathom Talent Partners Ltd",
-      "amount": 14400,
-      "currency": "GBP",
-      "invoice_number": "FTP-0931",
-      "issue_date": "2026-10-06",
-      "due_date": "2026-10-20",
-      "category": "payroll & benefits",
-      "description": "Fathom Talent Partners Ltd invoice FTP-0931 [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_3tpp8nwjcf65h90bm4aqh6cwkh",
-      "vendor_id": "new:pycon",
-      "vendor_name": "PyCon UK Society",
-      "amount": 135,
-      "currency": "GBP",
-      "invoice_number": "PYC-26-1187",
-      "issue_date": "2026-09-19",
-      "due_date": "2026-10-20",
-      "category": "unknown",
-      "description": "PyCon UK out-of-pocket expense paid personally by Isla Fraser, submitted for reimbursement [source: EMPLOYEE_BOOKKEEPING_UPLOAD]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_5nkw49wtg8dx6eydszv18465pz",
-      "vendor_id": "new:lodgewoodtravel",
-      "vendor_name": "Lodgewood Travel Ltd",
-      "amount": 6300,
-      "currency": "GBP",
-      "invoice_number": "LWT-55120",
-      "issue_date": "2026-10-02",
-      "due_date": "2026-10-09",
-      "category": "unknown",
-      "description": "Lodgewood Travel invoice LWT-55120 [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_7qzjc1xve4znxh8cn3zkwxkzgs",
-      "vendor_id": "ven_51ndcmr6t0pxjnb349yz4mz08m",
-      "vendor_name": "Snowflake Computing UK Ltd",
-      "amount": 21800,
-      "currency": "GBP",
-      "invoice_number": "SNF-INV-2026-10",
-      "issue_date": "2026-10-01",
-      "due_date": "2026-10-15",
-      "category": "hosting & infrastructure",
-      "description": "Snowflake invoice SNF-INV-2026-10 [source: EMAIL_FORWARD]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_58ggnx47jsva7tgt6mfjekqkpq",
-      "vendor_id": "ven_56tqf2q1323c4exjqd6qedd5d4",
-      "vendor_name": "Anthropic, PBC",
-      "amount": 1049.62,
-      "currency": "GBP",
-      "invoice_number": "ANT-INV-2026-09-0412",
-      "issue_date": "2026-10-01",
-      "due_date": "2026-10-10",
-      "category": "hosting & infrastructure",
-      "description": "Anthropic invoice ANT-INV-2026-09-0412, USD 1,385.20 [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_4z63w55d5cjtsk1kkspte0jt5w",
-      "vendor_id": "ven_51ndcmr6t0pxjnb349yz4mz08m",
-      "vendor_name": "Snowflake Computing UK Ltd",
-      "amount": 21800,
-      "currency": "GBP",
-      "invoice_number": "SNF-INV-2026-10",
-      "issue_date": "2026-10-01",
-      "due_date": "2026-10-15",
-      "category": "hosting & infrastructure",
-      "description": "Snowflake invoice SNF-INV-2026-10 [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_4pm2w6rp3fvg7txx5p8eej99m2",
-      "vendor_id": "ven_421pwfyx80rnmccs1a4z0xde8t",
-      "vendor_name": "Sentry",
-      "amount": 2800,
-      "currency": "GBP",
-      "invoice_number": "SEN-2026-10-4471",
-      "issue_date": "2026-10-01",
-      "due_date": "2026-10-05",
-      "category": "subscriptions",
-      "description": "Sentry invoice SEN-2026-10-4471 [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_3tq0ec1mzzs6he3bgg8323xd01",
-      "vendor_id": "ven_4aedgc0qpyhfq6f44wfdk83ny2",
-      "vendor_name": "Nordhaus Studio BV",
-      "amount": 7671.29,
-      "currency": "GBP",
-      "invoice_number": "NHS-2026-0142",
-      "issue_date": "2026-10-01",
-      "due_date": "2026-10-19",
-      "category": "marketing & advertising",
-      "description": "Nordhaus Studio BV invoice NHS-2026-0142, EUR 9,000, VAT reverse charged [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_1afhafvhh0nw25g9fz77vzeb7a",
-      "vendor_id": "ven_4njn13g2taqreehpg2wdywmk9f",
-      "vendor_name": "Northwind Facilities Ltd",
-      "amount": 975,
-      "currency": "GBP",
-      "invoice_number": "NW-88690",
-      "issue_date": "2026-09-30",
-      "due_date": "2026-10-14",
-      "category": "office expenses",
-      "description": "Northwind Facilities Ltd invoice NW-88690 [source: EMAIL_SCAN]",
-      "bank_account": null
-    },
-    {
-      "bill_id": "evi_782b5t8ez4rs0jtcwehs1m44jy",
-      "vendor_id": "ven_0k4qsyef6xfby3102hkqerdr6j",
-      "vendor_name": "Harrison & Webb Solicitors LLP",
-      "amount": 2750,
-      "currency": "GBP",
-      "invoice_number": "HW-2026-117",
-      "issue_date": "2026-09-29",
-      "due_date": "2026-10-13",
-      "category": "legal & professional fees",
-      "description": "Harrison & Webb Solicitors LLP fee note HW-2026-117 [source: EMAIL_SCAN]",
-      "bank_account": null
+      "description": "Harbourline Logistics Ltd invoice HL-76890 [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 118 6620 09",
+      "vendor_company_number": "07740155",
+      "received_at": "2026-09-02T09:41:00Z",
+      "matched_transaction_id": null
     },
     {
       "bill_id": "evi_2kz87fnbdtg1agwcw65n4z9b0b",
@@ -2960,20 +3190,426 @@
       "due_date": "2026-09-23",
       "category": "legal & professional fees",
       "description": "Meridian Insurance Brokers debit note MIB-2026-330 [source: EMAIL_SCAN]",
-      "bank_account": null
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": null,
+      "vendor_company_number": "06672091",
+      "received_at": "2026-09-17T09:41:00Z",
+      "matched_transaction_id": null
     },
     {
-      "bill_id": "evi_04bvwd4jjzhrc3c4ayp4f2vgfd",
+      "bill_id": "evi_782b5t8ez4rs0jtcwehs1m44jy",
+      "vendor_id": "ven_0k4qsyef6xfby3102hkqerdr6j",
+      "vendor_name": "Harrison & Webb Solicitors LLP",
+      "amount": 2750,
+      "currency": "GBP",
+      "invoice_number": "HW-2026-117",
+      "issue_date": "2026-09-29",
+      "due_date": "2026-10-13",
+      "category": "legal & professional fees",
+      "description": "Harrison & Webb Solicitors LLP fee note HW-2026-117 [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 190 4472 38",
+      "vendor_company_number": "OC398210",
+      "received_at": "2026-09-30T09:41:00Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_1afhafvhh0nw25g9fz77vzeb7a",
+      "vendor_id": "ven_4njn13g2taqreehpg2wdywmk9f",
+      "vendor_name": "Northwind Facilities Ltd",
+      "amount": 975,
+      "currency": "GBP",
+      "invoice_number": "NW-88690",
+      "issue_date": "2026-09-30",
+      "due_date": "2026-10-14",
+      "category": "office expenses",
+      "description": "Northwind Facilities Ltd invoice NW-88690 [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 771 3390 41",
+      "vendor_company_number": "09114772",
+      "received_at": "2026-10-01T09:41:00Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_3tq0ec1mzzs6he3bgg8323xd01",
+      "vendor_id": "ven_4aedgc0qpyhfq6f44wfdk83ny2",
+      "vendor_name": "Nordhaus Studio BV",
+      "amount": 7671.29,
+      "currency": "GBP",
+      "invoice_number": "NHS-2026-0142",
+      "issue_date": "2026-10-01",
+      "due_date": "2026-10-19",
+      "category": "marketing & advertising",
+      "description": "Nordhaus Studio BV invoice NHS-2026-0142, EUR 9,000, VAT reverse charged [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "NL",
+      "vendor_vat_number": "NL 8604 12 345 B01",
+      "vendor_company_number": "KvK 74120566",
+      "received_at": "2026-10-02T09:41:00Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_4pm2w6rp3fvg7txx5p8eej99m2",
+      "vendor_id": "ven_421pwfyx80rnmccs1a4z0xde8t",
+      "vendor_name": "Sentry",
+      "amount": 2800,
+      "currency": "GBP",
+      "invoice_number": "SEN-2026-10-4471",
+      "issue_date": "2026-10-01",
+      "due_date": "2026-10-05",
+      "category": "subscriptions",
+      "description": "Sentry invoice SEN-2026-10-4471 [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 318 5520 71",
+      "vendor_company_number": "11204587",
+      "received_at": "2026-10-02T09:41:00Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_4z63w55d5cjtsk1kkspte0jt5w",
+      "vendor_id": "ven_51ndcmr6t0pxjnb349yz4mz08m",
+      "vendor_name": "Snowflake Computing UK Ltd",
+      "amount": 21800,
+      "currency": "GBP",
+      "invoice_number": "SNF-INV-2026-10",
+      "issue_date": "2026-10-01",
+      "due_date": "2026-10-15",
+      "category": "hosting & infrastructure",
+      "description": "Snowflake invoice SNF-INV-2026-10 [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 226 2981 13",
+      "vendor_company_number": "10392719",
+      "received_at": "2026-10-02T09:41:00Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_58ggnx47jsva7tgt6mfjekqkpq",
+      "vendor_id": "ven_56tqf2q1323c4exjqd6qedd5d4",
+      "vendor_name": "Anthropic, PBC",
+      "amount": 1049.62,
+      "currency": "GBP",
+      "invoice_number": "ANT-INV-2026-09-0412",
+      "issue_date": "2026-10-01",
+      "due_date": "2026-10-10",
+      "category": "hosting & infrastructure",
+      "description": "Anthropic invoice ANT-INV-2026-09-0412, USD 1,385.20 [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "US",
+      "vendor_vat_number": null,
+      "vendor_company_number": null,
+      "received_at": "2026-10-02T09:41:00Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_7qzjc1xve4znxh8cn3zkwxkzgs",
+      "vendor_id": "ven_51ndcmr6t0pxjnb349yz4mz08m",
+      "vendor_name": "Snowflake Computing UK Ltd",
+      "amount": 21800,
+      "currency": "GBP",
+      "invoice_number": "SNF-INV-2026-10",
+      "issue_date": "2026-10-01",
+      "due_date": "2026-10-15",
+      "category": "hosting & infrastructure",
+      "description": "Snowflake invoice SNF-INV-2026-10 [source: EMAIL_FORWARD]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 226 2981 13",
+      "vendor_company_number": "10392719",
+      "received_at": "2026-10-02T09:41:00Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_5nkw49wtg8dx6eydszv18465pz",
+      "vendor_id": "ven_2wr9k60jwyf1ds1mt7gfyybpaw",
+      "vendor_name": "Lodgewood Travel Ltd",
+      "amount": 6300,
+      "currency": "GBP",
+      "invoice_number": "LWT-55120",
+      "issue_date": "2026-10-02",
+      "due_date": "2026-10-09",
+      "category": "travel & entertainment",
+      "description": "Lodgewood Travel invoice LWT-55120 [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 604 1187 22",
+      "vendor_company_number": "08817320",
+      "received_at": "2026-10-03T09:41:00Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_3tpp8nwjcf65h90bm4aqh6cwkh",
+      "vendor_id": "new:pycon",
+      "vendor_name": "PyCon UK Society",
+      "amount": 135,
+      "currency": "GBP",
+      "invoice_number": "PYC-26-1187",
+      "issue_date": "2026-09-19",
+      "due_date": "2026-10-20",
+      "category": "unknown",
+      "description": "PyCon UK expense paid personally by Isla Fraser, submitted for reimbursement [source: EMPLOYEE_BOOKKEEPING_UPLOAD]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 284 7716 03",
+      "vendor_company_number": null,
+      "received_at": "2026-10-06T09:41:00Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_32t9rmxzv341gwfy2sdcjbbqmq",
+      "vendor_id": "ven_07pg3dxv75gcd8s29gawrwjqw1",
+      "vendor_name": "Fathom Talent Partners Ltd",
+      "amount": 14400,
+      "currency": "GBP",
+      "invoice_number": "FTP-0931",
+      "issue_date": "2026-10-06",
+      "due_date": "2026-10-20",
+      "category": "payroll & benefits",
+      "description": "Fathom Talent Partners Ltd invoice FTP-0931 [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 482 6630 15",
+      "vendor_company_number": "12093384",
+      "received_at": "2026-10-07T09:41:00Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_1cpfhxydzwqhxy5qq618jspwyz",
+      "vendor_id": "ven_74j6t25sz91ngwpp7eqqksy1j6",
+      "vendor_name": "Clearview Media Ltd",
+      "amount": 3400,
+      "currency": "GBP",
+      "invoice_number": "CM-2026-114",
+      "issue_date": "2026-10-07",
+      "due_date": "2026-11-06",
+      "category": "marketing & advertising",
+      "description": "Clearview Media Ltd invoice CM-2026-114 [source: UPLOAD]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 559 2201 63",
+      "vendor_company_number": "10228461",
+      "received_at": "2026-10-08T09:41:00Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_07y5gw648700vz9qehp1p6tzvv",
+      "vendor_id": "ven_015yghk7vaqv5tmtap0hkzjd33",
+      "vendor_name": "Remote People Ltd",
+      "amount": 33600,
+      "currency": "GBP",
+      "invoice_number": "RP-2026-10-118",
+      "issue_date": "2026-10-10",
+      "due_date": "2026-10-25",
+      "category": "payroll & benefits",
+      "description": "Remote People Ltd invoice RP-2026-10-118 (net 33,400, VAT 200 at stated 20%) [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 377 9021 46",
+      "vendor_company_number": "11730562",
+      "received_at": "2026-10-11T09:41:00Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_1gxcbna8gmmv1dkmwzm2d3kfzk",
+      "vendor_id": "ven_4njn13g2taqreehpg2wdywmk9f",
+      "vendor_name": "Northwind Facilities Ltd",
+      "amount": 975,
+      "currency": "GBP",
+      "invoice_number": "NW-88431",
+      "issue_date": "2026-09-23",
+      "due_date": "2026-10-07",
+      "category": "office expenses",
+      "description": "Northwind Facilities Ltd invoice NW-88431 [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 771 3390 41",
+      "vendor_company_number": "09114772",
+      "received_at": "2026-10-13T11:52:50Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_4b1rms137v2b91qphkh2nf2gqd",
+      "vendor_id": "ven_20tshdbaa6cg17hjgq5n2b74dx",
+      "vendor_name": "Slack Technologies Ltd",
+      "amount": 486,
+      "currency": "GBP",
+      "invoice_number": "SLK-7188",
+      "issue_date": "2026-10-09",
+      "due_date": "2026-10-23",
+      "category": "subscriptions",
+      "description": "Slack Technologies Ltd invoice SLK-7188 [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 244 6612 70",
+      "vendor_company_number": "10113309",
+      "received_at": "2026-10-13T11:52:50Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_6xt4bq3kag49wg92ak40rph92g",
+      "vendor_id": "ven_4mpj77cpayp2ax1z2dej7skv4f",
+      "vendor_name": "Amazon Web Services UK Ltd",
+      "amount": 7204.2,
+      "currency": "GBP",
+      "invoice_number": "AWS-INV-45190",
+      "issue_date": "2026-10-10",
+      "due_date": "2026-10-24",
+      "category": "hosting & infrastructure",
+      "description": "Amazon Web Services UK Ltd invoice AWS-INV-45190 [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 727 2554 45",
+      "vendor_company_number": "08650665",
+      "received_at": "2026-10-13T11:52:50Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_5w5e9aq2vtff0egyrkgbv4xsj9",
       "vendor_id": "ven_055qe33bweaeh9b4krfhr4t21x",
       "vendor_name": "Harbourline Logistics Ltd",
-      "amount": 540,
+      "amount": 612.48,
       "currency": "GBP",
-      "invoice_number": "HL-76890",
-      "issue_date": "2026-09-01",
-      "due_date": "2026-09-15",
+      "invoice_number": "HL-77120",
+      "issue_date": "2026-10-04",
+      "due_date": "2026-10-25",
       "category": "travel & entertainment",
-      "description": "Harbourline Logistics Ltd invoice HL-76890 [source: EMAIL_SCAN]",
-      "bank_account": null
+      "description": "Harbourline Logistics Ltd invoice HL-77120 [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 118 6620 09",
+      "vendor_company_number": "07740155",
+      "received_at": "2026-10-13T11:52:50Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_5xpcwfp7s2xrm8c1dyckg1qh6x",
+      "vendor_id": "ven_1tx7c1dy8hwjq8wmjt1zn44cpz",
+      "vendor_name": "Connolly Accountants Ltd",
+      "amount": 1800,
+      "currency": "GBP",
+      "invoice_number": "CA-2026-0918",
+      "issue_date": "2026-10-05",
+      "due_date": "2026-10-26",
+      "category": "legal & professional fees",
+      "description": "Connolly Accountants Ltd invoice CA-2026-0918 [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 218 4052 19",
+      "vendor_company_number": "07482016",
+      "received_at": "2026-10-13T11:52:50Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_2tfw909v91r049jvcx55eetdky",
+      "vendor_id": "ven_3prd0hp4j5ne0pgs7rd12gzcxq",
+      "vendor_name": "Meridian Translations BV",
+      "amount": 1564.6,
+      "currency": "GBP",
+      "invoice_number": "MT-2026-0442",
+      "issue_date": "2026-10-02",
+      "due_date": "2026-11-01",
+      "category": "marketing & advertising",
+      "description": "Meridian Translations BV invoice MT-2026-0442 [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "NL 861 447 209 B01",
+      "vendor_company_number": "64119320",
+      "received_at": "2026-10-13T11:52:50Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_4067cwsh6q4k5w20a9ny0hbat7",
+      "vendor_id": "ven_49ze0bdyt8eydfy71x5k7zff3e",
+      "vendor_name": "Halberd Security Ltd",
+      "amount": 4250,
+      "currency": "GBP",
+      "invoice_number": "HAL-3310",
+      "issue_date": "2026-10-06",
+      "due_date": "2026-11-05",
+      "category": "legal & professional fees",
+      "description": "Halberd Security Ltd invoice HAL-3310 (work done in September 2026) [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 402 8871 33",
+      "vendor_company_number": "12886041",
+      "received_at": "2026-10-13T11:52:50Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_4hhjd13zgxs1tjr5ddvm4ygaes",
+      "vendor_id": "ven_74j6t25sz91ngwpp7eqqksy1j6",
+      "vendor_name": "Clearview Media Ltd",
+      "amount": 3400,
+      "currency": "GBP",
+      "invoice_number": "CM-2026-114",
+      "issue_date": "2026-10-07",
+      "due_date": "2026-11-06",
+      "category": "marketing & advertising",
+      "description": "Clearview Media Ltd invoice CM-2026-114 [source: EMAIL_SCAN] [payment pi_21wce2r2qh1t9p9hyxgev6vpns drafted to a one-off 'scan' payee, not a saved beneficiary]",
+      "bank_account": "..9047",
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 559 2201 63",
+      "vendor_company_number": "10228461",
+      "received_at": "2026-10-13T11:52:50Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_4w57v6qrjpkr56hdfq3mb27rje",
+      "vendor_id": "ven_6ct7m6dd316bsjjrhz0fnq0we5",
+      "vendor_name": "HubSpot UK Ltd",
+      "amount": 2480,
+      "currency": "GBP",
+      "invoice_number": "HS-2026-8120",
+      "issue_date": "2026-10-08",
+      "due_date": "2026-11-07",
+      "category": "marketing & advertising",
+      "description": "HubSpot UK Ltd invoice HS-2026-8120 [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 173 9922 84",
+      "vendor_company_number": "08553127",
+      "received_at": "2026-10-13T11:52:50Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_1zrbf88vg3bpn7y46hpzv9j1ng",
+      "vendor_id": "ven_4a69v9wr7vdmae41a6xbd89jmd",
+      "vendor_name": "Wren & Fielding LLP",
+      "amount": 2150,
+      "currency": "GBP",
+      "invoice_number": "INV-WF-2291",
+      "issue_date": "2026-10-11",
+      "due_date": "2026-11-10",
+      "category": "legal & professional fees",
+      "description": "Wren & Fielding LLP invoice INV-WF-2291 [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 402 1188 55",
+      "vendor_company_number": "OC341882",
+      "received_at": "2026-10-13T11:52:50Z",
+      "matched_transaction_id": null
+    },
+    {
+      "bill_id": "evi_23nvzy1efb93qph8kj7bhnh306",
+      "vendor_id": "ven_3dprxejfxfhwbc5fh8wh6a1qf4",
+      "vendor_name": "WeWork UK Ltd",
+      "amount": 2950,
+      "currency": "GBP",
+      "invoice_number": "WW-UK-2026-11-4B",
+      "issue_date": "2026-10-13",
+      "due_date": "2026-11-01",
+      "category": "rent",
+      "description": "WeWork UK Ltd invoice WW-UK-2026-11-4B [source: EMAIL_SCAN]",
+      "bank_account": null,
+      "vendor_country": "GB",
+      "vendor_vat_number": "GB 211 7714 09",
+      "vendor_company_number": "09372314",
+      "received_at": "2026-10-14T09:41:00Z",
+      "matched_transaction_id": null
     },
     {
       "bill_id": "pi_32jwmyy7p76bhsv0skwb16pd1g",
@@ -2989,24 +3625,257 @@
       "bank_account": null
     }
   ],
-  "payroll_payouts": [
+  "paid_invoices": [
     {
-      "payment_id": "pi_6aeygsmg6239r02ja5zcgv0dv7",
-      "name": "Priya Chandra",
-      "employee_id": "emp_001",
-      "amount": 3550
+      "invoice_id": "evi_7w4kkn2szks9tdm3b1kn03bpm2",
+      "invoice_number": "SNF-INV-2026-09",
+      "vendor_name": "Snowflake Computing UK Ltd",
+      "company_number": "10392719",
+      "paid_at": "2026-09-11",
+      "transaction_id": "txn_5pcnr9v1ncb5qqpgham78rrjpe"
     },
     {
-      "payment_id": "pi_7j50nk5fn3mqgz0h9daq9d1rk0",
-      "name": "Rhys Owen",
-      "employee_id": "emp_002",
-      "amount": 3900
+      "invoice_id": "evi_03x022t9gxghdf3288n51b6p4w",
+      "invoice_number": "CM-2026-109",
+      "vendor_name": "Clearview Media Ltd",
+      "company_number": "10228461",
+      "paid_at": "2026-09-16",
+      "transaction_id": "txn_469an1tcwrkb4fkb9nmeps5k5e"
     },
     {
-      "payment_id": "pi_0628zwpk57fg7j6mdezekz8f0y",
-      "name": "Isla Fraser",
-      "employee_id": "emp_001",
-      "amount": 4350
+      "invoice_id": "evi_5fhwf5fq5r1f77tz4fes9q8a8z",
+      "invoice_number": "VB-2026-09-77412",
+      "vendor_name": "Vodafone Limited",
+      "company_number": null,
+      "paid_at": "2026-09-18",
+      "transaction_id": "txn_74hbneyr4vh54nqdcj09x5yy6v"
+    },
+    {
+      "invoice_id": "evi_4py3td2g8j6r1a0cn0fvzg1dqb",
+      "invoice_number": "VCL-2026-09-PRO",
+      "vendor_name": "Vercel Inc.",
+      "company_number": null,
+      "paid_at": "2026-09-10",
+      "transaction_id": "txn_50bgkyhepy96qxt4kvamq0mfy0"
+    },
+    {
+      "invoice_id": "evi_5y9g0d32scsfmqbrvbx0hfg82p",
+      "invoice_number": "JB-2026-0912-3381",
+      "vendor_name": "JetBrains s.r.o.",
+      "company_number": null,
+      "paid_at": "2026-09-12",
+      "transaction_id": "txn_0hpewkbkxvebnddyjnsgw3kcw7"
+    },
+    {
+      "invoice_id": "evi_37tw6yjf92jw8t2z4t2fn8g7xe",
+      "invoice_number": "SPOT-P2C4F81",
+      "vendor_name": "Spotify AB",
+      "company_number": null,
+      "paid_at": "2026-09-14",
+      "transaction_id": "txn_4pqpztqq4eez5h0p5fzks3091w"
+    },
+    {
+      "invoice_id": "evi_62mch1aegm144jkgbychfygb02",
+      "invoice_number": "BCS-M-2026-55120",
+      "vendor_name": "BCS, The Chartered Institute for IT",
+      "company_number": null,
+      "paid_at": "2026-09-15",
+      "transaction_id": "txn_23enbc976njadb8154mkcexwe0"
+    },
+    {
+      "invoice_id": "evi_6y06dmyh36cpwwg87vt5ea9pkm",
+      "invoice_number": "PST-50231",
+      "vendor_name": "Posturite Ltd",
+      "company_number": null,
+      "paid_at": "2026-09-21",
+      "transaction_id": "txn_52xx54qq7wafsgv7atn6w257ga"
+    },
+    {
+      "invoice_id": "evi_7y85w839nm1syxy8dfwc7faxh8",
+      "invoice_number": "BCS-L-2026-08814",
+      "vendor_name": "BCS Learning & Development Ltd",
+      "company_number": null,
+      "paid_at": "2026-09-15",
+      "transaction_id": "txn_0pt6td95ep0061a7apnkg2hkde"
+    },
+    {
+      "invoice_id": "evi_4pza7pc4wyhv0x0nqt6kpb2k0v",
+      "invoice_number": "R245-0916-4471",
+      "vendor_name": "Apple Retail UK Limited",
+      "company_number": null,
+      "paid_at": "2026-09-16",
+      "transaction_id": "txn_6dgt6frhptr1hwr8z3pchc2vnb"
+    },
+    {
+      "invoice_id": "evi_5hfdh9a9sfr87b1vdsr4nnzs2f",
+      "invoice_number": "SK-24091-118",
+      "vendor_name": "Sketch London",
+      "company_number": null,
+      "paid_at": "2026-09-24",
+      "transaction_id": "txn_0r24tmv3yrya38hargfa1fg28q"
+    },
+    {
+      "invoice_id": "evi_3d0phr6qp3569jg5j1w86wnb87",
+      "invoice_number": "FIG-87990",
+      "vendor_name": "Figma, Inc.",
+      "company_number": null,
+      "paid_at": "2026-09-26",
+      "transaction_id": "txn_69z7szfkv04fwd09zfamxzk5qz"
+    },
+    {
+      "invoice_id": "evi_4h65m1z56zmyw7deejjy9t1whk",
+      "invoice_number": "INV-AWS-0001",
+      "vendor_name": "Amazon Web Services EMEA SARL",
+      "company_number": null,
+      "paid_at": "2025-08-08",
+      "transaction_id": "txn_53qca83j0emz48v7cbfbmdsmb8"
+    },
+    {
+      "invoice_id": "evi_2pnw49wxv7cnvfe043wvcnpghv",
+      "invoice_number": "DEEL-UK-3092",
+      "vendor_name": "Deel UK Ltd",
+      "company_number": "12414983",
+      "paid_at": "2026-10-08",
+      "transaction_id": "txn_26na97mtz13wn8c8rhbgs8m7pn"
+    }
+  ],
+  "payroll_runs": [
+    {
+      "id": "pay_01m5dbb5knf6ebbs8zf3as9kk6",
+      "name": "United Kingdom Payroll",
+      "status": "draft",
+      "period": "October 2026",
+      "pay_date": null,
+      "total": 11800,
+      "created_at": "2026-10-20T19:06:52Z",
+      "employees": [
+        [
+          "emp_43prgcr71b89t8wkfqsfb5z920",
+          "Priya Chandra",
+          3550,
+          "2235"
+        ],
+        [
+          "emp_04qeffdy8d2qjswxz52rsaw54j",
+          "Isla Fraser",
+          4350,
+          "2233"
+        ],
+        [
+          "emp_1s2r805jz3q7jb9fkkcybd9fs4",
+          "Rhys Owen",
+          3900,
+          "2234"
+        ]
+      ]
+    },
+    {
+      "id": "payroll_013tgknhpc9f8xg78ygtamrbsc",
+      "name": "October 2026 Payroll",
+      "status": "paid",
+      "period": "2026-10-01 to 2026-10-28",
+      "pay_date": "2026-09-18",
+      "total": 11800,
+      "created_at": "2026-10-13T11:52:50Z",
+      "employees": [
+        [
+          "emp_43prgcr71b89t8wkfqsfb5z920",
+          "Priya Chandra",
+          3550,
+          "2235"
+        ],
+        [
+          "emp_04qeffdy8d2qjswxz52rsaw54j",
+          "Isla Fraser",
+          4350,
+          "2233"
+        ],
+        [
+          "emp_1s2r805jz3q7jb9fkkcybd9fs4",
+          "Rhys Owen",
+          3900,
+          "2234"
+        ]
+      ]
+    },
+    {
+      "id": "payroll_5vp1mwmttqrfzygvdgxv0bgbxg",
+      "name": "September 2026 Payroll",
+      "status": "paid",
+      "period": "2026-09-01 to 2026-09-28",
+      "pay_date": "2026-09-25",
+      "total": 11800,
+      "created_at": "2026-10-13T11:52:50Z",
+      "employees": [
+        [
+          "emp_43prgcr71b89t8wkfqsfb5z920",
+          "Priya Chandra",
+          3550,
+          "2235"
+        ],
+        [
+          "emp_04qeffdy8d2qjswxz52rsaw54j",
+          "Isla Fraser",
+          4350,
+          "2233"
+        ],
+        [
+          "emp_1s2r805jz3q7jb9fkkcybd9fs4",
+          "Rhys Owen",
+          3900,
+          "2234"
+        ]
+      ]
+    },
+    {
+      "id": "payroll_1fvy71ynvrxv0wyy0qrwwe864h",
+      "name": "August 2026 Payroll",
+      "status": "paid",
+      "period": "2026-08-01 to 2026-08-28",
+      "pay_date": "2026-08-25",
+      "total": 11800,
+      "created_at": "2026-10-13T11:52:50Z",
+      "employees": []
+    },
+    {
+      "id": "payroll_1g2pa35k715f1ghmhtjw9ymkq6",
+      "name": "July 2026 Payroll",
+      "status": "paid",
+      "period": "2026-07-01 to 2026-07-28",
+      "pay_date": "2026-07-25",
+      "total": 11800,
+      "created_at": "2026-10-13T11:52:50Z",
+      "employees": []
+    },
+    {
+      "id": "payroll_00fpdtfpkt1z08sj3w2gw7yh4d",
+      "name": "June 2026 Payroll",
+      "status": "paid",
+      "period": "2026-06-01 to 2026-06-28",
+      "pay_date": "2026-06-25",
+      "total": 11800,
+      "created_at": "2026-10-13T11:52:50Z",
+      "employees": []
+    },
+    {
+      "id": "payroll_1p3t8px0qjjw78at8sta2zzgnt",
+      "name": "May 2026 Payroll",
+      "status": "paid",
+      "period": "2026-05-01 to 2026-05-28",
+      "pay_date": "2026-05-25",
+      "total": 11800,
+      "created_at": "2026-10-13T11:52:50Z",
+      "employees": []
+    },
+    {
+      "id": "payroll_24tnd6bmgwtwq534wgp8vn0x46",
+      "name": "April 2026 Payroll",
+      "status": "paid",
+      "period": "2026-04-01 to 2026-04-28",
+      "pay_date": "2026-04-25",
+      "total": 11800,
+      "created_at": "2026-10-13T11:52:50Z",
+      "employees": []
     }
   ]
 }

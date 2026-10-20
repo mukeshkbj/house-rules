@@ -1,7 +1,7 @@
 """House Rules - Streamlit UI.  Run: streamlit run app.py"""
 import streamlit as st
 
-from house_rules import llm, seapoint
+from house_rules import checks, llm, seapoint
 from house_rules.engine import Engine
 
 st.set_page_config(page_title="House Rules", page_icon="🛡️", layout="wide")
@@ -45,10 +45,10 @@ with st.sidebar:
             st.stop()
     _e = st.session_state.eng
     s1, s2 = st.columns(2)
-    if s1.button("💾 Save policy", width="stretch", disabled=not _e.approved(),
+    if s1.button("💾 Save", width="stretch", disabled=not _e.approved(),
                  help="Save approved rules, edits and the audit log. New bills are reviewed against this."):
         st.toast(f"Saved policy v{_e.version} to {_e.save_policy().name}")
-    if s2.button("📂 Load saved", width="stretch", disabled=not _e.policy_path().exists(),
+    if s2.button("📂 Load", width="stretch", disabled=not _e.policy_path().exists(),
                  help="Restore the last saved policy instead of mining again."):
         _e.load_policy()
         st.rerun()
@@ -149,6 +149,12 @@ with t2:
             ids = [k for k, v in eng.decisions.items() if v["decision"] == label]
             col.metric(label.capitalize(), len(ids), f"£{sum(amounts[i] for i in ids):,.0f}", delta_color="off")
 
+    pay = checks.payroll_findings(snap.get("payroll_runs", []))
+    if pay:
+        st.markdown("**Payroll checks** <span class='muted'>(Seapoint pay runs)</span>", unsafe_allow_html=True)
+        for f in pay:
+            st.markdown(f"<div class='card'>{chip(f['severity'])}&nbsp; <b>{f['id']}</b> {f['message']}</div>",
+                        unsafe_allow_html=True)
     for bill in snap["pending_bills"]:
         d = eng.decisions.get(bill["bill_id"])
         head = (f"<b>{bill['vendor_name']}</b> · £{bill['amount']:,.2f} · due {bill['due_date']} "

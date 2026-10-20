@@ -4,9 +4,9 @@
  "as_of": "2026-10-20",
  "cash": 2459109.84,
  "burn": 141388.62,
- "txn_count": 187,
- "vendor_count": 35,
- "policy_v": 40,
+ "txn_count": 200,
+ "vendor_count": 69,
+ "policy_v": 43,
  "rules": [
   {
    "id": "R-001",
@@ -298,6 +298,42 @@
   },
   {
    "id": "R-017",
+   "name": "Lodgewood Travel usual range",
+   "type": "amount_range",
+   "condition": "Lodgewood Travel is paid between \u00a36,300.00 and \u00a311,700.00 (7 payments)",
+   "params": {
+    "min": 5670.0,
+    "max": 12870.0
+   },
+   "action": "auto_approve",
+   "confidence": 0.95,
+   "status": "approved",
+   "origin": "miner",
+   "support": 7,
+   "bt_in": 7,
+   "bt_breach": 0,
+   "bt_ids": []
+  },
+  {
+   "id": "R-018",
+   "name": "Lodgewood Travel paid around day 9",
+   "type": "payment_timing",
+   "condition": "Lodgewood Travel falls due between day 9 and 9 of the month",
+   "params": {
+    "day_from": 7,
+    "day_to": 11
+   },
+   "action": "hold",
+   "confidence": 0.95,
+   "status": "approved",
+   "origin": "miner",
+   "support": 7,
+   "bt_in": 7,
+   "bt_breach": 0,
+   "bt_ids": []
+  },
+  {
+   "id": "R-019",
    "name": "Anthropic usual range",
    "type": "amount_range",
    "condition": "Anthropic is paid between \u00a3916.00 and \u00a31,228.00 (7 payments)",
@@ -315,7 +351,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-018",
+   "id": "R-020",
    "name": "Anthropic paid around day 10",
    "type": "payment_timing",
    "condition": "Anthropic falls due between day 10 and 10 of the month",
@@ -333,7 +369,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-019",
+   "id": "R-021",
    "name": "Snowflake fixed amount",
    "type": "amount_range",
    "condition": "Snowflake is paid exactly \u00a321,800.00 (7 payments)",
@@ -351,7 +387,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-020",
+   "id": "R-022",
    "name": "Snowflake paid around day 11",
    "type": "payment_timing",
    "condition": "Snowflake falls due between day 11 and 11 of the month",
@@ -369,7 +405,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-021",
+   "id": "R-023",
    "name": "Connolly Accountants fixed amount",
    "type": "amount_range",
    "condition": "Connolly Accountants is paid exactly \u00a31,800.00 (7 payments)",
@@ -387,7 +423,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-022",
+   "id": "R-024",
    "name": "Connolly Accountants paid around day 12",
    "type": "payment_timing",
    "condition": "Connolly Accountants falls due between day 12 and 12 of the month",
@@ -405,7 +441,25 @@
    "bt_ids": []
   },
   {
-   "id": "R-023",
+   "id": "R-025",
+   "name": "HubSpot usual range",
+   "type": "amount_range",
+   "condition": "HubSpot is paid between \u00a32,030.00 and \u00a32,930.00 (7 payments)",
+   "params": {
+    "min": 1827.0,
+    "max": 3223.0
+   },
+   "action": "auto_approve",
+   "confidence": 0.95,
+   "status": "approved",
+   "origin": "miner",
+   "support": 7,
+   "bt_in": 7,
+   "bt_breach": 0,
+   "bt_ids": []
+  },
+  {
+   "id": "R-026",
    "name": "Rhys Owen fixed amount",
    "type": "amount_range",
    "condition": "Rhys Owen is paid exactly \u00a33,900.00 (7 payments)",
@@ -423,7 +477,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-024",
+   "id": "R-027",
    "name": "Priya Chandra fixed amount",
    "type": "amount_range",
    "condition": "Priya Chandra is paid exactly \u00a33,550.00 (7 payments)",
@@ -441,7 +495,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-025",
+   "id": "R-028",
    "name": "Isla Fraser fixed amount",
    "type": "amount_range",
    "condition": "Isla Fraser is paid exactly \u00a34,350.00 (7 payments)",
@@ -459,7 +513,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-026",
+   "id": "R-029",
    "name": "Northwind Facilities fixed amount",
    "type": "amount_range",
    "condition": "Northwind Facilities is paid exactly \u00a3975.00 (6 payments)",
@@ -477,7 +531,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-027",
+   "id": "R-030",
    "name": "Northwind Facilities paid around day 14",
    "type": "payment_timing",
    "condition": "Northwind Facilities falls due between day 14 and 14 of the month",
@@ -495,7 +549,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-028",
+   "id": "R-031",
    "name": "Clearview Media usual range",
    "type": "amount_range",
    "condition": "Clearview Media is paid between \u00a32,600.00 and \u00a34,600.00 (6 payments)",
@@ -513,7 +567,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-029",
+   "id": "R-032",
    "name": "Clearview Media paid around day 16",
    "type": "payment_timing",
    "condition": "Clearview Media falls due between day 16 and 16 of the month",
@@ -531,7 +585,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-030",
+   "id": "R-033",
    "name": "Fathom Talent Partners usual range",
    "type": "amount_range",
    "condition": "Fathom Talent Partners is paid between \u00a38,600.00 and \u00a314,600.00 (6 payments)",
@@ -549,7 +603,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-031",
+   "id": "R-034",
    "name": "Fathom Talent Partners paid around day 17",
    "type": "payment_timing",
    "condition": "Fathom Talent Partners falls due between day 17 and 17 of the month",
@@ -567,7 +621,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-032",
+   "id": "R-035",
    "name": "Nordhaus Studio BV usual range",
    "type": "amount_range",
    "condition": "Nordhaus Studio BV is paid between \u00a37,649.20 and \u00a37,834.74 (6 payments)",
@@ -585,7 +639,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-033",
+   "id": "R-036",
    "name": "Nordhaus Studio BV paid around day 19",
    "type": "payment_timing",
    "condition": "Nordhaus Studio BV falls due between day 19 and 19 of the month",
@@ -603,7 +657,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-034",
+   "id": "R-037",
    "name": "Vodafone Business usual range",
    "type": "amount_range",
    "condition": "Vodafone Business is paid between \u00a3374.40 and \u00a3561.60 (6 payments)",
@@ -621,7 +675,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-035",
+   "id": "R-038",
    "name": "Vodafone Business paid around day 18",
    "type": "payment_timing",
    "condition": "Vodafone Business falls due between day 18 and 20 of the month",
@@ -639,7 +693,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-036",
+   "id": "R-039",
    "name": "Harbourline Logistics usual range",
    "type": "amount_range",
    "condition": "Harbourline Logistics is paid between \u00a3372.00 and \u00a3972.00 (6 payments)",
@@ -657,7 +711,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-037",
+   "id": "R-040",
    "name": "Harbourline Logistics paid around day 22",
    "type": "payment_timing",
    "condition": "Harbourline Logistics falls due between day 22 and 22 of the month",
@@ -675,7 +729,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-038",
+   "id": "R-041",
    "name": "Remote People Ltd usual range",
    "type": "amount_range",
    "condition": "Remote People Ltd is paid between \u00a328,800.00 and \u00a336,800.00 (6 payments)",
@@ -693,7 +747,7 @@
    "bt_ids": []
   },
   {
-   "id": "R-039",
+   "id": "R-042",
    "name": "Remote People Ltd paid around day 25",
    "type": "payment_timing",
    "condition": "Remote People Ltd falls due between day 25 and 25 of the month",
@@ -737,191 +791,229 @@
  "decisions": [
   {
    "bill": {
-    "bill_id": "evi_23nvzy1efb93qph8kj7bhnh306",
-    "vendor_id": "ven_3dprxejfxfhwbc5fh8wh6a1qf4",
-    "vendor_name": "WeWork UK Ltd",
-    "amount": 2950,
+    "bill_id": "evi_04bvwd4jjzhrc3c4ayp4f2vgfd",
+    "vendor_id": "ven_055qe33bweaeh9b4krfhr4t21x",
+    "vendor_name": "Harbourline Logistics Ltd",
+    "amount": 540,
     "currency": "GBP",
-    "invoice_number": "WW-UK-2026-11-4B",
-    "issue_date": "2026-10-13",
-    "due_date": "2026-11-01",
-    "category": "rent",
-    "description": "WeWork UK Ltd invoice WW-UK-2026-11-4B [source: EMAIL_SCAN]",
-    "bank_account": null
+    "invoice_number": "HL-76890",
+    "issue_date": "2026-09-01",
+    "due_date": "2026-09-15",
+    "category": "travel & entertainment",
+    "description": "Harbourline Logistics Ltd invoice HL-76890 [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 118 6620 09",
+    "vendor_company_number": "07740155",
+    "received_at": "2026-09-02T09:41:00Z",
+    "matched_transaction_id": null
    },
    "decision": "hold",
-   "reason": "WeWork usual range: \u00a32,950.00 is above the usual maximum \u00a32,585.00",
+   "reason": "Harbourline Logistics paid around day 22: Due on day 15; normally paid between the 20th and 24th",
    "code_decision": "hold",
    "llm_decision": null,
    "invariants": [],
-   "matched": [],
+   "matched": [
+    "R-039"
+   ],
    "breaches": [
     {
-     "rule_id": "R-002",
+     "rule_id": "R-040",
      "severity": "hold",
-     "message": "WeWork usual range: \u00a32,950.00 is above the usual maximum \u00a32,585.00"
+     "message": "Harbourline Logistics paid around day 22: Due on day 15; normally paid between the 20th and 24th"
     }
    ]
   },
   {
    "bill": {
-    "bill_id": "evi_1zrbf88vg3bpn7y46hpzv9j1ng",
-    "vendor_id": "ven_4a69v9wr7vdmae41a6xbd89jmd",
-    "vendor_name": "Wren & Fielding LLP",
-    "amount": 2150,
+    "bill_id": "evi_2kz87fnbdtg1agwcw65n4z9b0b",
+    "vendor_id": "ven_63kn5e0tx9w2cy5a9hfs9nmb2m",
+    "vendor_name": "Meridian Insurance Brokers Ltd",
+    "amount": 1240,
     "currency": "GBP",
-    "invoice_number": "INV-WF-2291",
-    "issue_date": "2026-10-11",
-    "due_date": "2026-11-10",
+    "invoice_number": "MIB-2026-330",
+    "issue_date": "2026-09-16",
+    "due_date": "2026-09-23",
     "category": "legal & professional fees",
-    "description": "Wren & Fielding LLP invoice INV-WF-2291 [source: EMAIL_SCAN]",
-    "bank_account": null
+    "description": "Meridian Insurance Brokers debit note MIB-2026-330 [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": null,
+    "vendor_company_number": "06672091",
+    "received_at": "2026-09-17T09:41:00Z",
+    "matched_transaction_id": null
    },
    "decision": "escalate",
-   "reason": "No approved rule covers this vendor or category.",
-   "code_decision": "escalate",
-   "llm_decision": null,
-   "invariants": [],
-   "matched": [],
-   "breaches": []
-  },
-  {
-   "bill": {
-    "bill_id": "evi_4w57v6qrjpkr56hdfq3mb27rje",
-    "vendor_id": "ven_6ct7m6dd316bsjjrhz0fnq0we5",
-    "vendor_name": "HubSpot UK Ltd",
-    "amount": 2480,
-    "currency": "GBP",
-    "invoice_number": "HS-2026-8120",
-    "issue_date": "2026-10-08",
-    "due_date": "2026-11-07",
-    "category": "marketing & advertising",
-    "description": "HubSpot UK Ltd invoice HS-2026-8120 [source: EMAIL_SCAN]",
-    "bank_account": null
-   },
-   "decision": "escalate",
-   "reason": "No approved rule covers this vendor or category.",
-   "code_decision": "escalate",
-   "llm_decision": null,
-   "invariants": [],
-   "matched": [],
-   "breaches": []
-  },
-  {
-   "bill": {
-    "bill_id": "evi_4hhjd13zgxs1tjr5ddvm4ygaes",
-    "vendor_id": "ven_74j6t25sz91ngwpp7eqqksy1j6",
-    "vendor_name": "Clearview Media Ltd",
-    "amount": 3400,
-    "currency": "GBP",
-    "invoice_number": "CM-2026-114",
-    "issue_date": "2026-10-07",
-    "due_date": "2026-11-06",
-    "category": "marketing & advertising",
-    "description": "Clearview Media Ltd invoice CM-2026-114 [source: EMAIL_SCAN] [payment pi_21wce2r2qh1t9p9hyxgev6vpns drafted to a one-off 'scan' payee, not a saved beneficiary]",
-    "bank_account": "..9047"
-   },
-   "decision": "escalate",
-   "reason": "Possible duplicate of evi_1cpfhxydzwqhxy5qq618jspwyz (same invoice number) Pays account ..9047, but no account is on file for Clearview Media. Verify by phone using a number already on file before saving the payee.",
+   "reason": "Possible duplicate of txn_42pzv1knta6q15q01regk3zf4q (same invoice number)",
    "code_decision": "escalate",
    "llm_decision": null,
    "invariants": [
     {
      "id": "INV-1",
-     "message": "Possible duplicate of evi_1cpfhxydzwqhxy5qq618jspwyz (same invoice number)"
-    },
+     "message": "Possible duplicate of txn_42pzv1knta6q15q01regk3zf4q (same invoice number)"
+    }
+   ],
+   "matched": [],
+   "breaches": []
+  },
+  {
+   "bill": {
+    "bill_id": "evi_782b5t8ez4rs0jtcwehs1m44jy",
+    "vendor_id": "ven_0k4qsyef6xfby3102hkqerdr6j",
+    "vendor_name": "Harrison & Webb Solicitors LLP",
+    "amount": 2750,
+    "currency": "GBP",
+    "invoice_number": "HW-2026-117",
+    "issue_date": "2026-09-29",
+    "due_date": "2026-10-13",
+    "category": "legal & professional fees",
+    "description": "Harrison & Webb Solicitors LLP fee note HW-2026-117 [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 190 4472 38",
+    "vendor_company_number": "OC398210",
+    "received_at": "2026-09-30T09:41:00Z",
+    "matched_transaction_id": null
+   },
+   "decision": "escalate",
+   "reason": "No approved rule covers this vendor or category.",
+   "code_decision": "escalate",
+   "llm_decision": null,
+   "invariants": [],
+   "matched": [],
+   "breaches": []
+  },
+  {
+   "bill": {
+    "bill_id": "evi_1afhafvhh0nw25g9fz77vzeb7a",
+    "vendor_id": "ven_4njn13g2taqreehpg2wdywmk9f",
+    "vendor_name": "Northwind Facilities Ltd",
+    "amount": 975,
+    "currency": "GBP",
+    "invoice_number": "NW-88690",
+    "issue_date": "2026-09-30",
+    "due_date": "2026-10-14",
+    "category": "office expenses",
+    "description": "Northwind Facilities Ltd invoice NW-88690 [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 771 3390 41",
+    "vendor_company_number": "09114772",
+    "received_at": "2026-10-01T09:41:00Z",
+    "matched_transaction_id": null
+   },
+   "decision": "escalate",
+   "reason": "Possible duplicate of evi_1gxcbna8gmmv1dkmwzm2d3kfzk (same vendor, amount within 1%, within 20 days)",
+   "code_decision": "escalate",
+   "llm_decision": null,
+   "invariants": [
     {
-     "id": "INV-6",
-     "message": "Pays account ..9047, but no account is on file for Clearview Media. Verify by phone using a number already on file before saving the payee."
+     "id": "INV-1",
+     "message": "Possible duplicate of evi_1gxcbna8gmmv1dkmwzm2d3kfzk (same vendor, amount within 1%, within 20 days)"
     }
    ],
    "matched": [
-    "R-028"
+    "R-029",
+    "R-030"
    ],
-   "breaches": [
-    {
-     "rule_id": "R-029",
-     "severity": "hold",
-     "message": "Clearview Media paid around day 16: Due on day 6; normally paid between the 14th and 18th"
-    }
-   ]
-  },
-  {
-   "bill": {
-    "bill_id": "evi_4067cwsh6q4k5w20a9ny0hbat7",
-    "vendor_id": "new:halberdsecurity",
-    "vendor_name": "Halberd Security Ltd",
-    "amount": 4250,
-    "currency": "GBP",
-    "invoice_number": "HAL-3310",
-    "issue_date": "2026-10-06",
-    "due_date": "2026-11-05",
-    "category": "unknown",
-    "description": "Halberd Security Ltd invoice HAL-3310 (work done in September 2026) [source: EMAIL_SCAN]",
-    "bank_account": null
-   },
-   "decision": "escalate",
-   "reason": "New vendor 'Halberd Security Ltd' - not in vendor master. Onboard and verify before paying.",
-   "code_decision": "escalate",
-   "llm_decision": null,
-   "invariants": [
-    {
-     "id": "INV-3",
-     "message": "New vendor 'Halberd Security Ltd' - not in vendor master. Onboard and verify before paying."
-    }
-   ],
-   "matched": [],
    "breaches": []
   },
   {
    "bill": {
-    "bill_id": "evi_2tfw909v91r049jvcx55eetdky",
-    "vendor_id": "new:meridiantranslations",
-    "vendor_name": "Meridian Translations BV",
-    "amount": 1840,
-    "currency": "EUR",
-    "invoice_number": "MT-2026-0442",
-    "issue_date": "2026-10-02",
-    "due_date": "2026-11-01",
-    "category": "unknown",
-    "description": "Meridian Translations BV invoice MT-2026-0442 (country GB, NL VAT number) [source: EMAIL_SCAN]",
-    "bank_account": null
+    "bill_id": "evi_3tq0ec1mzzs6he3bgg8323xd01",
+    "vendor_id": "ven_4aedgc0qpyhfq6f44wfdk83ny2",
+    "vendor_name": "Nordhaus Studio BV",
+    "amount": 7671.29,
+    "currency": "GBP",
+    "invoice_number": "NHS-2026-0142",
+    "issue_date": "2026-10-01",
+    "due_date": "2026-10-19",
+    "category": "marketing & advertising",
+    "description": "Nordhaus Studio BV invoice NHS-2026-0142, EUR 9,000, VAT reverse charged [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "NL",
+    "vendor_vat_number": "NL 8604 12 345 B01",
+    "vendor_company_number": "KvK 74120566",
+    "received_at": "2026-10-02T09:41:00Z",
+    "matched_transaction_id": null
    },
-   "decision": "escalate",
-   "reason": "New vendor 'Meridian Translations BV' - not in vendor master. Onboard and verify before paying.",
-   "code_decision": "escalate",
+   "decision": "approve",
+   "reason": "Fits approved policy (R-035, R-036). Nothing unusual found.",
+   "code_decision": "approve",
    "llm_decision": null,
-   "invariants": [
-    {
-     "id": "INV-3",
-     "message": "New vendor 'Meridian Translations BV' - not in vendor master. Onboard and verify before paying."
-    }
+   "invariants": [],
+   "matched": [
+    "R-035",
+    "R-036"
    ],
-   "matched": [],
    "breaches": []
   },
   {
    "bill": {
-    "bill_id": "evi_5xpcwfp7s2xrm8c1dyckg1qh6x",
-    "vendor_id": "ven_1tx7c1dy8hwjq8wmjt1zn44cpz",
-    "vendor_name": "Connolly Accountants Ltd",
-    "amount": 1800,
+    "bill_id": "evi_4pm2w6rp3fvg7txx5p8eej99m2",
+    "vendor_id": "ven_421pwfyx80rnmccs1a4z0xde8t",
+    "vendor_name": "Sentry",
+    "amount": 2800,
     "currency": "GBP",
-    "invoice_number": "CA-2026-0918",
-    "issue_date": "2026-10-05",
-    "due_date": "2026-10-26",
-    "category": "legal & professional fees",
-    "description": "Connolly Accountants Ltd invoice CA-2026-0918 [source: EMAIL_SCAN]",
-    "bank_account": null
+    "invoice_number": "SEN-2026-10-4471",
+    "issue_date": "2026-10-01",
+    "due_date": "2026-10-05",
+    "category": "subscriptions",
+    "description": "Sentry invoice SEN-2026-10-4471 [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 318 5520 71",
+    "vendor_company_number": "11204587",
+    "received_at": "2026-10-02T09:41:00Z",
+    "matched_transaction_id": null
    },
    "decision": "escalate",
-   "reason": "Possible duplicate of txn_3n93x894qc0sh72fcn5h4s51bd (same vendor, amount within 1%, within 20 days)",
+   "reason": "Possible duplicate of txn_3seschwp2advg4pm9zva2rrdm0 (same vendor, amount within 1%, within 20 days)",
    "code_decision": "escalate",
    "llm_decision": null,
    "invariants": [
     {
      "id": "INV-1",
-     "message": "Possible duplicate of txn_3n93x894qc0sh72fcn5h4s51bd (same vendor, amount within 1%, within 20 days)"
+     "message": "Possible duplicate of txn_3seschwp2advg4pm9zva2rrdm0 (same vendor, amount within 1%, within 20 days)"
+    }
+   ],
+   "matched": [
+    "R-009",
+    "R-010"
+   ],
+   "breaches": []
+  },
+  {
+   "bill": {
+    "bill_id": "evi_4z63w55d5cjtsk1kkspte0jt5w",
+    "vendor_id": "ven_51ndcmr6t0pxjnb349yz4mz08m",
+    "vendor_name": "Snowflake Computing UK Ltd",
+    "amount": 21800,
+    "currency": "GBP",
+    "invoice_number": "SNF-INV-2026-10",
+    "issue_date": "2026-10-01",
+    "due_date": "2026-10-15",
+    "category": "hosting & infrastructure",
+    "description": "Snowflake invoice SNF-INV-2026-10 [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 226 2981 13",
+    "vendor_company_number": "10392719",
+    "received_at": "2026-10-02T09:41:00Z",
+    "matched_transaction_id": null
+   },
+   "decision": "escalate",
+   "reason": "Possible duplicate of txn_44f1vhy318f94ydj9zvwea7nz8 (same vendor, amount within 1%, within 20 days) \u00a321,800.00 is at or above the \u00a310,000 ceiling - two approvers required.",
+   "code_decision": "escalate",
+   "llm_decision": null,
+   "invariants": [
+    {
+     "id": "INV-1",
+     "message": "Possible duplicate of txn_44f1vhy318f94ydj9zvwea7nz8 (same vendor, amount within 1%, within 20 days)"
+    },
+    {
+     "id": "INV-4",
+     "message": "\u00a321,800.00 is at or above the \u00a310,000 ceiling - two approvers required."
     }
    ],
    "matched": [
@@ -931,63 +1023,310 @@
     {
      "rule_id": "R-022",
      "severity": "hold",
-     "message": "Connolly Accountants paid around day 12: Due on day 26; normally paid between the 10th and 14th"
+     "message": "Snowflake paid around day 11: Due on day 15; normally paid between the 9th and 13th"
     }
    ]
   },
   {
    "bill": {
-    "bill_id": "evi_5w5e9aq2vtff0egyrkgbv4xsj9",
-    "vendor_id": "ven_055qe33bweaeh9b4krfhr4t21x",
-    "vendor_name": "Harbourline Logistics Ltd",
-    "amount": 612.48,
+    "bill_id": "evi_58ggnx47jsva7tgt6mfjekqkpq",
+    "vendor_id": "ven_56tqf2q1323c4exjqd6qedd5d4",
+    "vendor_name": "Anthropic, PBC",
+    "amount": 1049.62,
     "currency": "GBP",
-    "invoice_number": "HL-77120",
-    "issue_date": "2026-10-04",
-    "due_date": "2026-10-25",
-    "category": "travel & entertainment",
-    "description": "Harbourline Logistics Ltd invoice HL-77120 [source: EMAIL_SCAN]",
-    "bank_account": null
+    "invoice_number": "ANT-INV-2026-09-0412",
+    "issue_date": "2026-10-01",
+    "due_date": "2026-10-10",
+    "category": "hosting & infrastructure",
+    "description": "Anthropic invoice ANT-INV-2026-09-0412, USD 1,385.20 [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "US",
+    "vendor_vat_number": null,
+    "vendor_company_number": null,
+    "received_at": "2026-10-02T09:41:00Z",
+    "matched_transaction_id": null
    },
-   "decision": "hold",
-   "reason": "Harbourline Logistics paid around day 22: Due on day 25; normally paid between the 20th and 24th",
-   "code_decision": "hold",
+   "decision": "escalate",
+   "reason": "Possible duplicate of txn_19y35t17qbf2d64sj3db1k9j1d (same vendor, amount within 1%, within 20 days)",
+   "code_decision": "escalate",
    "llm_decision": null,
-   "invariants": [],
+   "invariants": [
+    {
+     "id": "INV-1",
+     "message": "Possible duplicate of txn_19y35t17qbf2d64sj3db1k9j1d (same vendor, amount within 1%, within 20 days)"
+    }
+   ],
    "matched": [
-    "R-036"
+    "R-019",
+    "R-020"
+   ],
+   "breaches": []
+  },
+  {
+   "bill": {
+    "bill_id": "evi_7qzjc1xve4znxh8cn3zkwxkzgs",
+    "vendor_id": "ven_51ndcmr6t0pxjnb349yz4mz08m",
+    "vendor_name": "Snowflake Computing UK Ltd",
+    "amount": 21800,
+    "currency": "GBP",
+    "invoice_number": "SNF-INV-2026-10",
+    "issue_date": "2026-10-01",
+    "due_date": "2026-10-15",
+    "category": "hosting & infrastructure",
+    "description": "Snowflake invoice SNF-INV-2026-10 [source: EMAIL_FORWARD]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 226 2981 13",
+    "vendor_company_number": "10392719",
+    "received_at": "2026-10-02T09:41:00Z",
+    "matched_transaction_id": null
+   },
+   "decision": "escalate",
+   "reason": "Possible duplicate of txn_44f1vhy318f94ydj9zvwea7nz8 (same vendor, amount within 1%, within 20 days) \u00a321,800.00 is at or above the \u00a310,000 ceiling - two approvers required.",
+   "code_decision": "escalate",
+   "llm_decision": null,
+   "invariants": [
+    {
+     "id": "INV-1",
+     "message": "Possible duplicate of txn_44f1vhy318f94ydj9zvwea7nz8 (same vendor, amount within 1%, within 20 days)"
+    },
+    {
+     "id": "INV-4",
+     "message": "\u00a321,800.00 is at or above the \u00a310,000 ceiling - two approvers required."
+    }
+   ],
+   "matched": [
+    "R-021"
    ],
    "breaches": [
     {
-     "rule_id": "R-037",
+     "rule_id": "R-022",
      "severity": "hold",
-     "message": "Harbourline Logistics paid around day 22: Due on day 25; normally paid between the 20th and 24th"
+     "message": "Snowflake paid around day 11: Due on day 15; normally paid between the 9th and 13th"
     }
    ]
   },
   {
    "bill": {
-    "bill_id": "evi_6xt4bq3kag49wg92ak40rph92g",
-    "vendor_id": "ven_4mpj77cpayp2ax1z2dej7skv4f",
-    "vendor_name": "Amazon Web Services UK Ltd",
-    "amount": 7204.2,
+    "bill_id": "evi_5nkw49wtg8dx6eydszv18465pz",
+    "vendor_id": "ven_2wr9k60jwyf1ds1mt7gfyybpaw",
+    "vendor_name": "Lodgewood Travel Ltd",
+    "amount": 6300,
     "currency": "GBP",
-    "invoice_number": "AWS-INV-45190",
-    "issue_date": "2026-10-10",
-    "due_date": "2026-10-24",
-    "category": "hosting & infrastructure",
-    "description": "Amazon Web Services UK Ltd invoice AWS-INV-45190 [source: EMAIL_SCAN]",
-    "bank_account": null
+    "invoice_number": "LWT-55120",
+    "issue_date": "2026-10-02",
+    "due_date": "2026-10-09",
+    "category": "travel & entertainment",
+    "description": "Lodgewood Travel invoice LWT-55120 [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 604 1187 22",
+    "vendor_company_number": "08817320",
+    "received_at": "2026-10-03T09:41:00Z",
+    "matched_transaction_id": null
    },
-   "decision": "approve",
-   "reason": "Fits approved policy (R-001). Nothing unusual found.",
-   "code_decision": "approve",
+   "decision": "escalate",
+   "reason": "Already paid by card on 2026-10-09 (\u00a36,300.00) - possible duplicate (same vendor, amount within 1%, within 20 days)",
+   "code_decision": "escalate",
    "llm_decision": null,
-   "invariants": [],
+   "invariants": [
+    {
+     "id": "INV-1",
+     "message": "Already paid by card on 2026-10-09 (\u00a36,300.00) - possible duplicate (same vendor, amount within 1%, within 20 days)"
+    }
+   ],
    "matched": [
-    "R-001"
+    "R-017",
+    "R-018"
    ],
    "breaches": []
+  },
+  {
+   "bill": {
+    "bill_id": "evi_3tpp8nwjcf65h90bm4aqh6cwkh",
+    "vendor_id": "new:pycon",
+    "vendor_name": "PyCon UK Society",
+    "amount": 135,
+    "currency": "GBP",
+    "invoice_number": "PYC-26-1187",
+    "issue_date": "2026-09-19",
+    "due_date": "2026-10-20",
+    "category": "unknown",
+    "description": "PyCon UK expense paid personally by Isla Fraser, submitted for reimbursement [source: EMPLOYEE_BOOKKEEPING_UPLOAD]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 284 7716 03",
+    "vendor_company_number": null,
+    "received_at": "2026-10-06T09:41:00Z",
+    "matched_transaction_id": null
+   },
+   "decision": "escalate",
+   "reason": "New vendor 'PyCon UK Society' - not in vendor master. Onboard and verify before paying.",
+   "code_decision": "escalate",
+   "llm_decision": null,
+   "invariants": [
+    {
+     "id": "INV-3",
+     "message": "New vendor 'PyCon UK Society' - not in vendor master. Onboard and verify before paying."
+    }
+   ],
+   "matched": [],
+   "breaches": []
+  },
+  {
+   "bill": {
+    "bill_id": "evi_32t9rmxzv341gwfy2sdcjbbqmq",
+    "vendor_id": "ven_07pg3dxv75gcd8s29gawrwjqw1",
+    "vendor_name": "Fathom Talent Partners Ltd",
+    "amount": 14400,
+    "currency": "GBP",
+    "invoice_number": "FTP-0931",
+    "issue_date": "2026-10-06",
+    "due_date": "2026-10-20",
+    "category": "payroll & benefits",
+    "description": "Fathom Talent Partners Ltd invoice FTP-0931 [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 482 6630 15",
+    "vendor_company_number": "12093384",
+    "received_at": "2026-10-07T09:41:00Z",
+    "matched_transaction_id": null
+   },
+   "decision": "escalate",
+   "reason": "\u00a314,400.00 is at or above the \u00a310,000 ceiling - two approvers required.",
+   "code_decision": "escalate",
+   "llm_decision": null,
+   "invariants": [
+    {
+     "id": "INV-4",
+     "message": "\u00a314,400.00 is at or above the \u00a310,000 ceiling - two approvers required."
+    }
+   ],
+   "matched": [
+    "R-033"
+   ],
+   "breaches": [
+    {
+     "rule_id": "R-034",
+     "severity": "hold",
+     "message": "Fathom Talent Partners paid around day 17: Due on day 20; normally paid between the 15th and 19th"
+    }
+   ]
+  },
+  {
+   "bill": {
+    "bill_id": "evi_1cpfhxydzwqhxy5qq618jspwyz",
+    "vendor_id": "ven_74j6t25sz91ngwpp7eqqksy1j6",
+    "vendor_name": "Clearview Media Ltd",
+    "amount": 3400,
+    "currency": "GBP",
+    "invoice_number": "CM-2026-114",
+    "issue_date": "2026-10-07",
+    "due_date": "2026-11-06",
+    "category": "marketing & advertising",
+    "description": "Clearview Media Ltd invoice CM-2026-114 [source: UPLOAD]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 559 2201 63",
+    "vendor_company_number": "10228461",
+    "received_at": "2026-10-08T09:41:00Z",
+    "matched_transaction_id": null
+   },
+   "decision": "escalate",
+   "reason": "Possible duplicate of evi_4hhjd13zgxs1tjr5ddvm4ygaes (same invoice number)",
+   "code_decision": "escalate",
+   "llm_decision": null,
+   "invariants": [
+    {
+     "id": "INV-1",
+     "message": "Possible duplicate of evi_4hhjd13zgxs1tjr5ddvm4ygaes (same invoice number)"
+    }
+   ],
+   "matched": [
+    "R-031"
+   ],
+   "breaches": [
+    {
+     "rule_id": "R-032",
+     "severity": "hold",
+     "message": "Clearview Media paid around day 16: Due on day 6; normally paid between the 14th and 18th"
+    }
+   ]
+  },
+  {
+   "bill": {
+    "bill_id": "evi_07y5gw648700vz9qehp1p6tzvv",
+    "vendor_id": "ven_015yghk7vaqv5tmtap0hkzjd33",
+    "vendor_name": "Remote People Ltd",
+    "amount": 33600,
+    "currency": "GBP",
+    "invoice_number": "RP-2026-10-118",
+    "issue_date": "2026-10-10",
+    "due_date": "2026-10-25",
+    "category": "payroll & benefits",
+    "description": "Remote People Ltd invoice RP-2026-10-118 (net 33,400, VAT 200 at stated 20%) [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 377 9021 46",
+    "vendor_company_number": "11730562",
+    "received_at": "2026-10-11T09:41:00Z",
+    "matched_transaction_id": null
+   },
+   "decision": "escalate",
+   "reason": "\u00a333,600.00 is at or above the \u00a310,000 ceiling - two approvers required.",
+   "code_decision": "escalate",
+   "llm_decision": null,
+   "invariants": [
+    {
+     "id": "INV-4",
+     "message": "\u00a333,600.00 is at or above the \u00a310,000 ceiling - two approvers required."
+    }
+   ],
+   "matched": [
+    "R-041",
+    "R-042"
+   ],
+   "breaches": []
+  },
+  {
+   "bill": {
+    "bill_id": "evi_1gxcbna8gmmv1dkmwzm2d3kfzk",
+    "vendor_id": "ven_4njn13g2taqreehpg2wdywmk9f",
+    "vendor_name": "Northwind Facilities Ltd",
+    "amount": 975,
+    "currency": "GBP",
+    "invoice_number": "NW-88431",
+    "issue_date": "2026-09-23",
+    "due_date": "2026-10-07",
+    "category": "office expenses",
+    "description": "Northwind Facilities Ltd invoice NW-88431 [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 771 3390 41",
+    "vendor_company_number": "09114772",
+    "received_at": "2026-10-13T11:52:50Z",
+    "matched_transaction_id": null
+   },
+   "decision": "escalate",
+   "reason": "Possible duplicate of evi_1afhafvhh0nw25g9fz77vzeb7a (same vendor, amount within 1%, within 20 days)",
+   "code_decision": "escalate",
+   "llm_decision": null,
+   "invariants": [
+    {
+     "id": "INV-1",
+     "message": "Possible duplicate of evi_1afhafvhh0nw25g9fz77vzeb7a (same vendor, amount within 1%, within 20 days)"
+    }
+   ],
+   "matched": [
+    "R-029"
+   ],
+   "breaches": [
+    {
+     "rule_id": "R-030",
+     "severity": "hold",
+     "message": "Northwind Facilities paid around day 14: Due on day 7; normally paid between the 12th and 16th"
+    }
+   ]
   },
   {
    "bill": {
@@ -1001,7 +1340,12 @@
     "due_date": "2026-10-23",
     "category": "subscriptions",
     "description": "Slack Technologies Ltd invoice SLK-7188 [source: EMAIL_SCAN]",
-    "bank_account": null
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 244 6612 70",
+    "vendor_company_number": "10113309",
+    "received_at": "2026-10-13T11:52:50Z",
+    "matched_transaction_id": null
    },
    "decision": "escalate",
    "reason": "Possible duplicate of txn_3kg9mhrydyhfewqvajm6phzmv4 (same vendor, amount within 1%, within 20 days)",
@@ -1026,399 +1370,158 @@
   },
   {
    "bill": {
-    "bill_id": "evi_1gxcbna8gmmv1dkmwzm2d3kfzk",
-    "vendor_id": "ven_4njn13g2taqreehpg2wdywmk9f",
-    "vendor_name": "Northwind Facilities Ltd",
-    "amount": 975,
+    "bill_id": "evi_6xt4bq3kag49wg92ak40rph92g",
+    "vendor_id": "ven_4mpj77cpayp2ax1z2dej7skv4f",
+    "vendor_name": "Amazon Web Services UK Ltd",
+    "amount": 7204.2,
     "currency": "GBP",
-    "invoice_number": "NW-88431",
-    "issue_date": "2026-09-23",
-    "due_date": "2026-10-07",
-    "category": "office expenses",
-    "description": "Northwind Facilities Ltd invoice NW-88431 [source: EMAIL_SCAN]",
-    "bank_account": null
-   },
-   "decision": "escalate",
-   "reason": "Possible duplicate of evi_1afhafvhh0nw25g9fz77vzeb7a (same vendor, amount within 1%, within 20 days)",
-   "code_decision": "escalate",
-   "llm_decision": null,
-   "invariants": [
-    {
-     "id": "INV-1",
-     "message": "Possible duplicate of evi_1afhafvhh0nw25g9fz77vzeb7a (same vendor, amount within 1%, within 20 days)"
-    }
-   ],
-   "matched": [
-    "R-026"
-   ],
-   "breaches": [
-    {
-     "rule_id": "R-027",
-     "severity": "hold",
-     "message": "Northwind Facilities paid around day 14: Due on day 7; normally paid between the 12th and 16th"
-    }
-   ]
-  },
-  {
-   "bill": {
-    "bill_id": "evi_07y5gw648700vz9qehp1p6tzvv",
-    "vendor_id": "ven_015yghk7vaqv5tmtap0hkzjd33",
-    "vendor_name": "Remote People Ltd",
-    "amount": 33600,
-    "currency": "GBP",
-    "invoice_number": "RP-2026-10-118",
+    "invoice_number": "AWS-INV-45190",
     "issue_date": "2026-10-10",
-    "due_date": "2026-10-25",
-    "category": "payroll & benefits",
-    "description": "Remote People Ltd invoice RP-2026-10-118 (net 33,400, VAT 200 at stated 20%) [source: EMAIL_SCAN]",
-    "bank_account": null
-   },
-   "decision": "escalate",
-   "reason": "\u00a333,600.00 is at or above the \u00a310,000 ceiling - two approvers required.",
-   "code_decision": "escalate",
-   "llm_decision": null,
-   "invariants": [
-    {
-     "id": "INV-4",
-     "message": "\u00a333,600.00 is at or above the \u00a310,000 ceiling - two approvers required."
-    }
-   ],
-   "matched": [
-    "R-038",
-    "R-039"
-   ],
-   "breaches": []
-  },
-  {
-   "bill": {
-    "bill_id": "evi_1cpfhxydzwqhxy5qq618jspwyz",
-    "vendor_id": "ven_74j6t25sz91ngwpp7eqqksy1j6",
-    "vendor_name": "Clearview Media Ltd",
-    "amount": 3400,
-    "currency": "GBP",
-    "invoice_number": "CM-2026-114",
-    "issue_date": "2026-10-07",
-    "due_date": "2026-11-06",
-    "category": "marketing & advertising",
-    "description": "Clearview Media Ltd invoice CM-2026-114 [source: UPLOAD]",
-    "bank_account": null
-   },
-   "decision": "escalate",
-   "reason": "Possible duplicate of evi_4hhjd13zgxs1tjr5ddvm4ygaes (same invoice number)",
-   "code_decision": "escalate",
-   "llm_decision": null,
-   "invariants": [
-    {
-     "id": "INV-1",
-     "message": "Possible duplicate of evi_4hhjd13zgxs1tjr5ddvm4ygaes (same invoice number)"
-    }
-   ],
-   "matched": [
-    "R-028"
-   ],
-   "breaches": [
-    {
-     "rule_id": "R-029",
-     "severity": "hold",
-     "message": "Clearview Media paid around day 16: Due on day 6; normally paid between the 14th and 18th"
-    }
-   ]
-  },
-  {
-   "bill": {
-    "bill_id": "evi_32t9rmxzv341gwfy2sdcjbbqmq",
-    "vendor_id": "ven_07pg3dxv75gcd8s29gawrwjqw1",
-    "vendor_name": "Fathom Talent Partners Ltd",
-    "amount": 14400,
-    "currency": "GBP",
-    "invoice_number": "FTP-0931",
-    "issue_date": "2026-10-06",
-    "due_date": "2026-10-20",
-    "category": "payroll & benefits",
-    "description": "Fathom Talent Partners Ltd invoice FTP-0931 [source: EMAIL_SCAN]",
-    "bank_account": null
-   },
-   "decision": "escalate",
-   "reason": "\u00a314,400.00 is at or above the \u00a310,000 ceiling - two approvers required.",
-   "code_decision": "escalate",
-   "llm_decision": null,
-   "invariants": [
-    {
-     "id": "INV-4",
-     "message": "\u00a314,400.00 is at or above the \u00a310,000 ceiling - two approvers required."
-    }
-   ],
-   "matched": [
-    "R-030"
-   ],
-   "breaches": [
-    {
-     "rule_id": "R-031",
-     "severity": "hold",
-     "message": "Fathom Talent Partners paid around day 17: Due on day 20; normally paid between the 15th and 19th"
-    }
-   ]
-  },
-  {
-   "bill": {
-    "bill_id": "evi_3tpp8nwjcf65h90bm4aqh6cwkh",
-    "vendor_id": "new:pycon",
-    "vendor_name": "PyCon UK Society",
-    "amount": 135,
-    "currency": "GBP",
-    "invoice_number": "PYC-26-1187",
-    "issue_date": "2026-09-19",
-    "due_date": "2026-10-20",
-    "category": "unknown",
-    "description": "PyCon UK out-of-pocket expense paid personally by Isla Fraser, submitted for reimbursement [source: EMPLOYEE_BOOKKEEPING_UPLOAD]",
-    "bank_account": null
-   },
-   "decision": "escalate",
-   "reason": "New vendor 'PyCon UK Society' - not in vendor master. Onboard and verify before paying.",
-   "code_decision": "escalate",
-   "llm_decision": null,
-   "invariants": [
-    {
-     "id": "INV-3",
-     "message": "New vendor 'PyCon UK Society' - not in vendor master. Onboard and verify before paying."
-    }
-   ],
-   "matched": [],
-   "breaches": []
-  },
-  {
-   "bill": {
-    "bill_id": "evi_5nkw49wtg8dx6eydszv18465pz",
-    "vendor_id": "new:lodgewoodtravel",
-    "vendor_name": "Lodgewood Travel Ltd",
-    "amount": 6300,
-    "currency": "GBP",
-    "invoice_number": "LWT-55120",
-    "issue_date": "2026-10-02",
-    "due_date": "2026-10-09",
-    "category": "unknown",
-    "description": "Lodgewood Travel invoice LWT-55120 [source: EMAIL_SCAN]",
-    "bank_account": null
-   },
-   "decision": "escalate",
-   "reason": "New vendor 'Lodgewood Travel Ltd' - not in vendor master. Onboard and verify before paying.",
-   "code_decision": "escalate",
-   "llm_decision": null,
-   "invariants": [
-    {
-     "id": "INV-3",
-     "message": "New vendor 'Lodgewood Travel Ltd' - not in vendor master. Onboard and verify before paying."
-    }
-   ],
-   "matched": [],
-   "breaches": []
-  },
-  {
-   "bill": {
-    "bill_id": "evi_7qzjc1xve4znxh8cn3zkwxkzgs",
-    "vendor_id": "ven_51ndcmr6t0pxjnb349yz4mz08m",
-    "vendor_name": "Snowflake Computing UK Ltd",
-    "amount": 21800,
-    "currency": "GBP",
-    "invoice_number": "SNF-INV-2026-10",
-    "issue_date": "2026-10-01",
-    "due_date": "2026-10-15",
+    "due_date": "2026-10-24",
     "category": "hosting & infrastructure",
-    "description": "Snowflake invoice SNF-INV-2026-10 [source: EMAIL_FORWARD]",
-    "bank_account": null
-   },
-   "decision": "escalate",
-   "reason": "Possible duplicate of txn_44f1vhy318f94ydj9zvwea7nz8 (same vendor, amount within 1%, within 20 days) \u00a321,800.00 is at or above the \u00a310,000 ceiling - two approvers required.",
-   "code_decision": "escalate",
-   "llm_decision": null,
-   "invariants": [
-    {
-     "id": "INV-1",
-     "message": "Possible duplicate of txn_44f1vhy318f94ydj9zvwea7nz8 (same vendor, amount within 1%, within 20 days)"
-    },
-    {
-     "id": "INV-4",
-     "message": "\u00a321,800.00 is at or above the \u00a310,000 ceiling - two approvers required."
-    }
-   ],
-   "matched": [
-    "R-019"
-   ],
-   "breaches": [
-    {
-     "rule_id": "R-020",
-     "severity": "hold",
-     "message": "Snowflake paid around day 11: Due on day 15; normally paid between the 9th and 13th"
-    }
-   ]
-  },
-  {
-   "bill": {
-    "bill_id": "evi_58ggnx47jsva7tgt6mfjekqkpq",
-    "vendor_id": "ven_56tqf2q1323c4exjqd6qedd5d4",
-    "vendor_name": "Anthropic, PBC",
-    "amount": 1049.62,
-    "currency": "GBP",
-    "invoice_number": "ANT-INV-2026-09-0412",
-    "issue_date": "2026-10-01",
-    "due_date": "2026-10-10",
-    "category": "hosting & infrastructure",
-    "description": "Anthropic invoice ANT-INV-2026-09-0412, USD 1,385.20 [source: EMAIL_SCAN]",
-    "bank_account": null
-   },
-   "decision": "escalate",
-   "reason": "Possible duplicate of txn_19y35t17qbf2d64sj3db1k9j1d (same vendor, amount within 1%, within 20 days)",
-   "code_decision": "escalate",
-   "llm_decision": null,
-   "invariants": [
-    {
-     "id": "INV-1",
-     "message": "Possible duplicate of txn_19y35t17qbf2d64sj3db1k9j1d (same vendor, amount within 1%, within 20 days)"
-    }
-   ],
-   "matched": [
-    "R-017",
-    "R-018"
-   ],
-   "breaches": []
-  },
-  {
-   "bill": {
-    "bill_id": "evi_4z63w55d5cjtsk1kkspte0jt5w",
-    "vendor_id": "ven_51ndcmr6t0pxjnb349yz4mz08m",
-    "vendor_name": "Snowflake Computing UK Ltd",
-    "amount": 21800,
-    "currency": "GBP",
-    "invoice_number": "SNF-INV-2026-10",
-    "issue_date": "2026-10-01",
-    "due_date": "2026-10-15",
-    "category": "hosting & infrastructure",
-    "description": "Snowflake invoice SNF-INV-2026-10 [source: EMAIL_SCAN]",
-    "bank_account": null
-   },
-   "decision": "escalate",
-   "reason": "Possible duplicate of txn_44f1vhy318f94ydj9zvwea7nz8 (same vendor, amount within 1%, within 20 days) \u00a321,800.00 is at or above the \u00a310,000 ceiling - two approvers required.",
-   "code_decision": "escalate",
-   "llm_decision": null,
-   "invariants": [
-    {
-     "id": "INV-1",
-     "message": "Possible duplicate of txn_44f1vhy318f94ydj9zvwea7nz8 (same vendor, amount within 1%, within 20 days)"
-    },
-    {
-     "id": "INV-4",
-     "message": "\u00a321,800.00 is at or above the \u00a310,000 ceiling - two approvers required."
-    }
-   ],
-   "matched": [
-    "R-019"
-   ],
-   "breaches": [
-    {
-     "rule_id": "R-020",
-     "severity": "hold",
-     "message": "Snowflake paid around day 11: Due on day 15; normally paid between the 9th and 13th"
-    }
-   ]
-  },
-  {
-   "bill": {
-    "bill_id": "evi_4pm2w6rp3fvg7txx5p8eej99m2",
-    "vendor_id": "ven_421pwfyx80rnmccs1a4z0xde8t",
-    "vendor_name": "Sentry",
-    "amount": 2800,
-    "currency": "GBP",
-    "invoice_number": "SEN-2026-10-4471",
-    "issue_date": "2026-10-01",
-    "due_date": "2026-10-05",
-    "category": "subscriptions",
-    "description": "Sentry invoice SEN-2026-10-4471 [source: EMAIL_SCAN]",
-    "bank_account": null
-   },
-   "decision": "escalate",
-   "reason": "Possible duplicate of txn_3seschwp2advg4pm9zva2rrdm0 (same vendor, amount within 1%, within 20 days)",
-   "code_decision": "escalate",
-   "llm_decision": null,
-   "invariants": [
-    {
-     "id": "INV-1",
-     "message": "Possible duplicate of txn_3seschwp2advg4pm9zva2rrdm0 (same vendor, amount within 1%, within 20 days)"
-    }
-   ],
-   "matched": [
-    "R-009",
-    "R-010"
-   ],
-   "breaches": []
-  },
-  {
-   "bill": {
-    "bill_id": "evi_3tq0ec1mzzs6he3bgg8323xd01",
-    "vendor_id": "ven_4aedgc0qpyhfq6f44wfdk83ny2",
-    "vendor_name": "Nordhaus Studio BV",
-    "amount": 7671.29,
-    "currency": "GBP",
-    "invoice_number": "NHS-2026-0142",
-    "issue_date": "2026-10-01",
-    "due_date": "2026-10-19",
-    "category": "marketing & advertising",
-    "description": "Nordhaus Studio BV invoice NHS-2026-0142, EUR 9,000, VAT reverse charged [source: EMAIL_SCAN]",
-    "bank_account": null
+    "description": "Amazon Web Services UK Ltd invoice AWS-INV-45190 [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 727 2554 45",
+    "vendor_company_number": "08650665",
+    "received_at": "2026-10-13T11:52:50Z",
+    "matched_transaction_id": null
    },
    "decision": "approve",
-   "reason": "Fits approved policy (R-032, R-033). Nothing unusual found.",
+   "reason": "Fits approved policy (R-001). Nothing unusual found.",
    "code_decision": "approve",
    "llm_decision": null,
    "invariants": [],
    "matched": [
-    "R-032",
-    "R-033"
+    "R-001"
    ],
    "breaches": []
   },
   {
    "bill": {
-    "bill_id": "evi_1afhafvhh0nw25g9fz77vzeb7a",
-    "vendor_id": "ven_4njn13g2taqreehpg2wdywmk9f",
-    "vendor_name": "Northwind Facilities Ltd",
-    "amount": 975,
+    "bill_id": "evi_5w5e9aq2vtff0egyrkgbv4xsj9",
+    "vendor_id": "ven_055qe33bweaeh9b4krfhr4t21x",
+    "vendor_name": "Harbourline Logistics Ltd",
+    "amount": 612.48,
     "currency": "GBP",
-    "invoice_number": "NW-88690",
-    "issue_date": "2026-09-30",
-    "due_date": "2026-10-14",
-    "category": "office expenses",
-    "description": "Northwind Facilities Ltd invoice NW-88690 [source: EMAIL_SCAN]",
-    "bank_account": null
+    "invoice_number": "HL-77120",
+    "issue_date": "2026-10-04",
+    "due_date": "2026-10-25",
+    "category": "travel & entertainment",
+    "description": "Harbourline Logistics Ltd invoice HL-77120 [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 118 6620 09",
+    "vendor_company_number": "07740155",
+    "received_at": "2026-10-13T11:52:50Z",
+    "matched_transaction_id": null
+   },
+   "decision": "hold",
+   "reason": "Harbourline Logistics paid around day 22: Due on day 25; normally paid between the 20th and 24th",
+   "code_decision": "hold",
+   "llm_decision": null,
+   "invariants": [],
+   "matched": [
+    "R-039"
+   ],
+   "breaches": [
+    {
+     "rule_id": "R-040",
+     "severity": "hold",
+     "message": "Harbourline Logistics paid around day 22: Due on day 25; normally paid between the 20th and 24th"
+    }
+   ]
+  },
+  {
+   "bill": {
+    "bill_id": "evi_5xpcwfp7s2xrm8c1dyckg1qh6x",
+    "vendor_id": "ven_1tx7c1dy8hwjq8wmjt1zn44cpz",
+    "vendor_name": "Connolly Accountants Ltd",
+    "amount": 1800,
+    "currency": "GBP",
+    "invoice_number": "CA-2026-0918",
+    "issue_date": "2026-10-05",
+    "due_date": "2026-10-26",
+    "category": "legal & professional fees",
+    "description": "Connolly Accountants Ltd invoice CA-2026-0918 [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 218 4052 19",
+    "vendor_company_number": "07482016",
+    "received_at": "2026-10-13T11:52:50Z",
+    "matched_transaction_id": null
    },
    "decision": "escalate",
-   "reason": "Possible duplicate of evi_1gxcbna8gmmv1dkmwzm2d3kfzk (same vendor, amount within 1%, within 20 days)",
+   "reason": "Possible duplicate of txn_3n93x894qc0sh72fcn5h4s51bd (same vendor, amount within 1%, within 20 days)",
    "code_decision": "escalate",
    "llm_decision": null,
    "invariants": [
     {
      "id": "INV-1",
-     "message": "Possible duplicate of evi_1gxcbna8gmmv1dkmwzm2d3kfzk (same vendor, amount within 1%, within 20 days)"
+     "message": "Possible duplicate of txn_3n93x894qc0sh72fcn5h4s51bd (same vendor, amount within 1%, within 20 days)"
     }
    ],
    "matched": [
-    "R-026",
-    "R-027"
+    "R-023"
    ],
+   "breaches": [
+    {
+     "rule_id": "R-024",
+     "severity": "hold",
+     "message": "Connolly Accountants paid around day 12: Due on day 26; normally paid between the 10th and 14th"
+    }
+   ]
+  },
+  {
+   "bill": {
+    "bill_id": "evi_2tfw909v91r049jvcx55eetdky",
+    "vendor_id": "ven_3prd0hp4j5ne0pgs7rd12gzcxq",
+    "vendor_name": "Meridian Translations BV",
+    "amount": 1564.6,
+    "currency": "GBP",
+    "invoice_number": "MT-2026-0442",
+    "issue_date": "2026-10-02",
+    "due_date": "2026-11-01",
+    "category": "marketing & advertising",
+    "description": "Meridian Translations BV invoice MT-2026-0442 [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "NL 861 447 209 B01",
+    "vendor_company_number": "64119320",
+    "received_at": "2026-10-13T11:52:50Z",
+    "matched_transaction_id": null
+   },
+   "decision": "escalate",
+   "reason": "VAT number NL 861 447 209 B01 is registered in NL, but the supplier's country is GB. Check the supplier's details.",
+   "code_decision": "escalate",
+   "llm_decision": null,
+   "invariants": [
+    {
+     "id": "INV-9",
+     "message": "VAT number NL 861 447 209 B01 is registered in NL, but the supplier's country is GB. Check the supplier's details."
+    }
+   ],
+   "matched": [],
    "breaches": []
   },
   {
    "bill": {
-    "bill_id": "evi_782b5t8ez4rs0jtcwehs1m44jy",
-    "vendor_id": "ven_0k4qsyef6xfby3102hkqerdr6j",
-    "vendor_name": "Harrison & Webb Solicitors LLP",
-    "amount": 2750,
+    "bill_id": "evi_4067cwsh6q4k5w20a9ny0hbat7",
+    "vendor_id": "ven_49ze0bdyt8eydfy71x5k7zff3e",
+    "vendor_name": "Halberd Security Ltd",
+    "amount": 4250,
     "currency": "GBP",
-    "invoice_number": "HW-2026-117",
-    "issue_date": "2026-09-29",
-    "due_date": "2026-10-13",
+    "invoice_number": "HAL-3310",
+    "issue_date": "2026-10-06",
+    "due_date": "2026-11-05",
     "category": "legal & professional fees",
-    "description": "Harrison & Webb Solicitors LLP fee note HW-2026-117 [source: EMAIL_SCAN]",
-    "bank_account": null
+    "description": "Halberd Security Ltd invoice HAL-3310 (work done in September 2026) [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 402 8871 33",
+    "vendor_company_number": "12886041",
+    "received_at": "2026-10-13T11:52:50Z",
+    "matched_transaction_id": null
    },
    "decision": "escalate",
    "reason": "No approved rule covers this vendor or category.",
@@ -1430,58 +1533,139 @@
   },
   {
    "bill": {
-    "bill_id": "evi_2kz87fnbdtg1agwcw65n4z9b0b",
-    "vendor_id": "ven_63kn5e0tx9w2cy5a9hfs9nmb2m",
-    "vendor_name": "Meridian Insurance Brokers Ltd",
-    "amount": 1240,
+    "bill_id": "evi_4hhjd13zgxs1tjr5ddvm4ygaes",
+    "vendor_id": "ven_74j6t25sz91ngwpp7eqqksy1j6",
+    "vendor_name": "Clearview Media Ltd",
+    "amount": 3400,
     "currency": "GBP",
-    "invoice_number": "MIB-2026-330",
-    "issue_date": "2026-09-16",
-    "due_date": "2026-09-23",
-    "category": "legal & professional fees",
-    "description": "Meridian Insurance Brokers debit note MIB-2026-330 [source: EMAIL_SCAN]",
-    "bank_account": null
+    "invoice_number": "CM-2026-114",
+    "issue_date": "2026-10-07",
+    "due_date": "2026-11-06",
+    "category": "marketing & advertising",
+    "description": "Clearview Media Ltd invoice CM-2026-114 [source: EMAIL_SCAN] [payment pi_21wce2r2qh1t9p9hyxgev6vpns drafted to a one-off 'scan' payee, not a saved beneficiary]",
+    "bank_account": "..9047",
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 559 2201 63",
+    "vendor_company_number": "10228461",
+    "received_at": "2026-10-13T11:52:50Z",
+    "matched_transaction_id": null
    },
    "decision": "escalate",
-   "reason": "Possible duplicate of txn_42pzv1knta6q15q01regk3zf4q (same invoice number)",
+   "reason": "Possible duplicate of evi_1cpfhxydzwqhxy5qq618jspwyz (same invoice number) Pays account ..9047, but no account is on file for Clearview Media. Verify by phone using a number already on file before saving the payee.",
    "code_decision": "escalate",
    "llm_decision": null,
    "invariants": [
     {
      "id": "INV-1",
-     "message": "Possible duplicate of txn_42pzv1knta6q15q01regk3zf4q (same invoice number)"
+     "message": "Possible duplicate of evi_1cpfhxydzwqhxy5qq618jspwyz (same invoice number)"
+    },
+    {
+     "id": "INV-6",
+     "message": "Pays account ..9047, but no account is on file for Clearview Media. Verify by phone using a number already on file before saving the payee."
     }
    ],
+   "matched": [
+    "R-031"
+   ],
+   "breaches": [
+    {
+     "rule_id": "R-032",
+     "severity": "hold",
+     "message": "Clearview Media paid around day 16: Due on day 6; normally paid between the 14th and 18th"
+    }
+   ]
+  },
+  {
+   "bill": {
+    "bill_id": "evi_4w57v6qrjpkr56hdfq3mb27rje",
+    "vendor_id": "ven_6ct7m6dd316bsjjrhz0fnq0we5",
+    "vendor_name": "HubSpot UK Ltd",
+    "amount": 2480,
+    "currency": "GBP",
+    "invoice_number": "HS-2026-8120",
+    "issue_date": "2026-10-08",
+    "due_date": "2026-11-07",
+    "category": "marketing & advertising",
+    "description": "HubSpot UK Ltd invoice HS-2026-8120 [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 173 9922 84",
+    "vendor_company_number": "08553127",
+    "received_at": "2026-10-13T11:52:50Z",
+    "matched_transaction_id": null
+   },
+   "decision": "escalate",
+   "reason": "Possible duplicate of txn_44tksjj8qhv73w44rggz1xd8wb (exact amount paid within 5 days of the invoice date)",
+   "code_decision": "escalate",
+   "llm_decision": null,
+   "invariants": [
+    {
+     "id": "INV-1",
+     "message": "Possible duplicate of txn_44tksjj8qhv73w44rggz1xd8wb (exact amount paid within 5 days of the invoice date)"
+    }
+   ],
+   "matched": [
+    "R-025"
+   ],
+   "breaches": []
+  },
+  {
+   "bill": {
+    "bill_id": "evi_1zrbf88vg3bpn7y46hpzv9j1ng",
+    "vendor_id": "ven_4a69v9wr7vdmae41a6xbd89jmd",
+    "vendor_name": "Wren & Fielding LLP",
+    "amount": 2150,
+    "currency": "GBP",
+    "invoice_number": "INV-WF-2291",
+    "issue_date": "2026-10-11",
+    "due_date": "2026-11-10",
+    "category": "legal & professional fees",
+    "description": "Wren & Fielding LLP invoice INV-WF-2291 [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 402 1188 55",
+    "vendor_company_number": "OC341882",
+    "received_at": "2026-10-13T11:52:50Z",
+    "matched_transaction_id": null
+   },
+   "decision": "escalate",
+   "reason": "No approved rule covers this vendor or category.",
+   "code_decision": "escalate",
+   "llm_decision": null,
+   "invariants": [],
    "matched": [],
    "breaches": []
   },
   {
    "bill": {
-    "bill_id": "evi_04bvwd4jjzhrc3c4ayp4f2vgfd",
-    "vendor_id": "ven_055qe33bweaeh9b4krfhr4t21x",
-    "vendor_name": "Harbourline Logistics Ltd",
-    "amount": 540,
+    "bill_id": "evi_23nvzy1efb93qph8kj7bhnh306",
+    "vendor_id": "ven_3dprxejfxfhwbc5fh8wh6a1qf4",
+    "vendor_name": "WeWork UK Ltd",
+    "amount": 2950,
     "currency": "GBP",
-    "invoice_number": "HL-76890",
-    "issue_date": "2026-09-01",
-    "due_date": "2026-09-15",
-    "category": "travel & entertainment",
-    "description": "Harbourline Logistics Ltd invoice HL-76890 [source: EMAIL_SCAN]",
-    "bank_account": null
+    "invoice_number": "WW-UK-2026-11-4B",
+    "issue_date": "2026-10-13",
+    "due_date": "2026-11-01",
+    "category": "rent",
+    "description": "WeWork UK Ltd invoice WW-UK-2026-11-4B [source: EMAIL_SCAN]",
+    "bank_account": null,
+    "vendor_country": "GB",
+    "vendor_vat_number": "GB 211 7714 09",
+    "vendor_company_number": "09372314",
+    "received_at": "2026-10-14T09:41:00Z",
+    "matched_transaction_id": null
    },
    "decision": "hold",
-   "reason": "Harbourline Logistics paid around day 22: Due on day 15; normally paid between the 20th and 24th",
+   "reason": "WeWork usual range: \u00a32,950.00 is above the usual maximum \u00a32,585.00",
    "code_decision": "hold",
    "llm_decision": null,
    "invariants": [],
-   "matched": [
-    "R-036"
-   ],
+   "matched": [],
    "breaches": [
     {
-     "rule_id": "R-037",
+     "rule_id": "R-002",
      "severity": "hold",
-     "message": "Harbourline Logistics paid around day 22: Due on day 15; normally paid between the 20th and 24th"
+     "message": "WeWork usual range: \u00a32,950.00 is above the usual maximum \u00a32,585.00"
     }
    ]
   },
@@ -1736,7 +1920,7 @@
    "caught": true,
    "history": [
     {
-     "policy_v": 39,
+     "policy_v": 42,
      "decision": "approve"
     }
    ]
@@ -1746,7 +1930,7 @@
   "id": "R-P01",
   "name": "One invoice per payroll & staffing supplier per month",
   "condition": "Each payroll, recruiter and employer-of-record payee should be paid once per calendar month",
-  "rationale": "Nothing in the policy limited how often a supplier can bill, so a second in-range Fathom invoice looked routine. History shows Fathom, Remote People and Deel billing once per calendar month. Backtest flags 6 past payments: September salaries for Isla Fraser, Priya Chandra and Rhys Owen were each paid twice (18th and 25th), \u00a311,800 overpaid. Those are real findings, not false alarms.",
+  "rationale": "Nothing in the policy limited how often a supplier can bill, so a second in-range Fathom invoice looked routine. History shows Fathom, Remote People and Deel billing once per calendar month. Backtest flags 6 past payments: in September, Isla Fraser, Priya Chandra and Rhys Owen were each paid twice (18th and 25th), \u00a311,800 in one month. Seapoint's payroll shows why: the October run was paid early, on 18 Sep. Those are real findings, not false alarms.",
   "for": "A-10",
   "bt_in": 34,
   "bt_breach": 6
@@ -1818,338 +2002,340 @@
    "bank_account": null
   }
  ],
- "payroll": [
-  {
-   "payment_id": "pi_6aeygsmg6239r02ja5zcgv0dv7",
-   "name": "Priya Chandra",
-   "employee_id": "emp_001",
-   "amount": 3550
-  },
-  {
-   "payment_id": "pi_7j50nk5fn3mqgz0h9daq9d1rk0",
-   "name": "Rhys Owen",
-   "employee_id": "emp_002",
-   "amount": 3900
-  },
-  {
-   "payment_id": "pi_0628zwpk57fg7j6mdezekz8f0y",
-   "name": "Isla Fraser",
-   "employee_id": "emp_001",
-   "amount": 4350
-  }
- ],
+ "payroll": [],
  "audit": [
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 0,
    "actor": "Miner",
    "action": "proposed rules",
-   "detail": "39 rules from 187 transactions"
+   "detail": "42 rules from 200 transactions"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 1,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-001 - Amazon Web Services usual range"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 2,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-002 - WeWork usual range"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 3,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-003 - Vercel usual range"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 4,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-004 - Vercel paid around day 9"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 5,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-005 - Figma fixed amount"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 6,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-006 - Google Cloud usual range"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 7,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-007 - Slack Technologies fixed amount"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 8,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-008 - Slack Technologies paid around day 3"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 9,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-009 - Sentry fixed amount"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 10,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-010 - Sentry paid around day 5"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 11,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-011 - Notion fixed amount"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 12,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-012 - Notion paid around day 5"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 13,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-013 - GitHub fixed amount"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 14,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-014 - GitHub paid around day 7"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 15,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-015 - Linear fixed amount"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 16,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-016 - Linear paid around day 9"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 17,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-017 - Anthropic usual range"
+   "detail": "R-017 - Lodgewood Travel usual range"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 18,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-018 - Anthropic paid around day 10"
+   "detail": "R-018 - Lodgewood Travel paid around day 9"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 19,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-019 - Snowflake fixed amount"
+   "detail": "R-019 - Anthropic usual range"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 20,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-020 - Snowflake paid around day 11"
+   "detail": "R-020 - Anthropic paid around day 10"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 21,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-021 - Connolly Accountants fixed amount"
+   "detail": "R-021 - Snowflake fixed amount"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 22,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-022 - Connolly Accountants paid around day 12"
+   "detail": "R-022 - Snowflake paid around day 11"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 23,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-023 - Rhys Owen fixed amount"
+   "detail": "R-023 - Connolly Accountants fixed amount"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 24,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-024 - Priya Chandra fixed amount"
+   "detail": "R-024 - Connolly Accountants paid around day 12"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 25,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-025 - Isla Fraser fixed amount"
+   "detail": "R-025 - HubSpot usual range"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 26,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-026 - Northwind Facilities fixed amount"
+   "detail": "R-026 - Rhys Owen fixed amount"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 27,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-027 - Northwind Facilities paid around day 14"
+   "detail": "R-027 - Priya Chandra fixed amount"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 28,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-028 - Clearview Media usual range"
+   "detail": "R-028 - Isla Fraser fixed amount"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 29,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-029 - Clearview Media paid around day 16"
+   "detail": "R-029 - Northwind Facilities fixed amount"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 30,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-030 - Fathom Talent Partners usual range"
+   "detail": "R-030 - Northwind Facilities paid around day 14"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 31,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-031 - Fathom Talent Partners paid around day 17"
+   "detail": "R-031 - Clearview Media usual range"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 32,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-032 - Nordhaus Studio BV usual range"
+   "detail": "R-032 - Clearview Media paid around day 16"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 33,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-033 - Nordhaus Studio BV paid around day 19"
+   "detail": "R-033 - Fathom Talent Partners usual range"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 34,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-034 - Vodafone Business usual range"
+   "detail": "R-034 - Fathom Talent Partners paid around day 17"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 35,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-035 - Vodafone Business paid around day 18"
+   "detail": "R-035 - Nordhaus Studio BV usual range"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 36,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-036 - Harbourline Logistics usual range"
+   "detail": "R-036 - Nordhaus Studio BV paid around day 19"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 37,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-037 - Harbourline Logistics paid around day 22"
+   "detail": "R-037 - Vodafone Business usual range"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 38,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-038 - Remote People Ltd usual range"
+   "detail": "R-038 - Vodafone Business paid around day 18"
   },
   {
-   "time": "19:31:54",
+   "time": "20:49:08",
    "policy_v": 39,
    "actor": "Founder",
    "action": "approved rule",
-   "detail": "R-039 - Remote People Ltd paid around day 25"
+   "detail": "R-039 - Harbourline Logistics usual range"
   },
   {
-   "time": "19:31:54",
-   "policy_v": 39,
+   "time": "20:49:08",
+   "policy_v": 40,
+   "actor": "Founder",
+   "action": "approved rule",
+   "detail": "R-040 - Harbourline Logistics paid around day 22"
+  },
+  {
+   "time": "20:49:08",
+   "policy_v": 41,
+   "actor": "Founder",
+   "action": "approved rule",
+   "detail": "R-041 - Remote People Ltd usual range"
+  },
+  {
+   "time": "20:49:08",
+   "policy_v": 42,
+   "actor": "Founder",
+   "action": "approved rule",
+   "detail": "R-042 - Remote People Ltd paid around day 25"
+  },
+  {
+   "time": "20:49:08",
+   "policy_v": 42,
    "actor": "Guardian",
    "action": "reviewed pending bills",
    "detail": "2 approve, 3 hold, 21 escalate"
   },
   {
-   "time": "19:31:54",
-   "policy_v": 39,
+   "time": "20:49:08",
+   "policy_v": 42,
    "actor": "Red Team",
    "action": "round 1 attack",
    "detail": "9/10 caught"
   },
   {
-   "time": "19:31:54",
-   "policy_v": 39,
+   "time": "20:49:08",
+   "policy_v": 42,
    "actor": "Miner",
    "action": "proposed patch",
    "detail": "R-P01 for A-10: One invoice per payroll & staffing supplier per month"
   },
   {
-   "time": "19:31:54",
-   "policy_v": 40,
+   "time": "20:49:08",
+   "policy_v": 43,
    "actor": "Founder",
    "action": "approved rule",
    "detail": "R-P01 - One invoice per payroll & staffing supplier per month"
   },
   {
-   "time": "19:31:54",
-   "policy_v": 40,
+   "time": "20:49:08",
+   "policy_v": 43,
    "actor": "Red Team",
    "action": "replayed attacks",
    "detail": "A-10 caught"

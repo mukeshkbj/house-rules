@@ -17,6 +17,7 @@ SEVERITY = {"approve": 0, "hold": 1, "escalate": 2}
 
 HARD_CEILING = 10_000.00          # anything at or above needs dual approval
 DUPLICATE_WINDOW_DAYS = 20        # same vendor, similar amount, within this window
+PAID_ON_RECEIPT_DAYS = 5          # same vendor, exact amount, paid within days of the invoice date
 NEAR_AMOUNT_PCT = 0.01            # "similar amount" = within 1%
 LOOKALIKE_RATIO = 0.85            # name similarity that counts as a lookalike
 
@@ -70,11 +71,14 @@ def hard_invariants(bill: dict, snapshot: dict, queue: list[dict]) -> list[dict]
                                                           and (inv.startswith(oinv) or oinv.startswith(inv)))))
         amt_close = abs(float(o["amount"]) - amount) <= max(amount, 1) * NEAR_AMOUNT_PCT
         near_in_time = bdate and o["_date"] and abs((bdate - o["_date"]).days) <= DUPLICATE_WINDOW_DAYS
-        if inv_match or (amt_close and near_in_time):
+        issued = _d(bill.get("issue_date"))
+        paid_on_receipt = (issued and o["_date"] and abs(float(o["amount"]) - amount) < 0.005
+                           and abs((issued - o["_date"]).days) <= PAID_ON_RECEIPT_DAYS)
+        if inv_match or (amt_close and near_in_time) or paid_on_receipt:
             findings.append({
                 "id": "INV-1", "severity": "escalate",
-                "message": f"Possible duplicate of {o['_id']} (" +
-                           ("same invoice number" if inv_match else "same vendor, amount within 1%, within 20 days") + ")",
+                "message": (f"Already paid by card on {o['date']} (£{float(o['amount']):,.2f}) - possible duplicate (" if o.get('channel') == 'card' else f"Possible duplicate of {o['_id']} (") +
+                           ("same invoice number" if inv_match else "same vendor, amount within 1%, within 20 days" if amt_close and near_in_time else "exact amount paid within 5 days of the invoice date") + ")",
                 "evidence": [o["_id"]],
             })
             break
@@ -97,6 +101,40 @@ def hard_invariants(bill: dict, snapshot: dict, queue: list[dict]) -> list[dict]
                        "Verify by phone using a number already on file before saving the payee.",
             "evidence": [vendor["vendor_id"]],
         })
+
+    # INV-7 Seapoint says this invoice number was already paid (exact match, not a heuristic)
+    if bill.get("matched_transaction_id"):
+        findings.append({"id": "INV-7", "severity": "escalate",
+                         "message": f"Seapoint already matched this invoice to payment {bill['matched_transaction_id']}.",
+                         "evidence": [bill["matched_transaction_id"]]})
+    elif inv:
+        same = next((p for p in snapshot.get("paid_invoices", []) if _norm(p["invoice_number"]) == inv and (
+            p.get("company_number") == bill.get("vendor_company_number")
+            or _norm(p["vendor_name"]) == _norm(bill.get("vendor_name")))), None)
+        if same:
+            findings.append({"id": "INV-7", "severity": "escalate",
+                             "message": f"Invoice {bill['invoice_number']} was already paid on {same['paid_at']} "
+                                        f"(Seapoint matched it to {same['transaction_id']}).",
+                             "evidence": [same["transaction_id"]]})
+
+    # INV-8 supplier identity on the invoice differs from the identity Seapoint has on file
+    if vendor:
+        for field, label in (("company_number", "Company number"), ("vat_number", "VAT number")):
+            known, given = vendor.get(field), bill.get(f"vendor_{field}")
+            if known and given and _norm(known) != _norm(given):
+                findings.append({"id": "INV-8", "severity": "escalate",
+                                 "message": f"{label} on the invoice ({given}) differs from the one on file for "
+                                            f"{vendor['name']} ({known}). Possible impersonation.",
+                                 "evidence": [vendor["vendor_id"]]})
+
+    # INV-9 VAT number issued by a different country than the supplier's address
+    vat, country = (bill.get("vendor_vat_number") or "").strip().upper(), (bill.get("vendor_country") or "").upper()
+    prefix = re.match(r"([A-Z]{2})", vat)
+    if prefix and country and prefix.group(1) not in (country, "EU") and not (prefix.group(1) == "GB" and country == "UK"):
+        findings.append({"id": "INV-9", "severity": "hold",
+                         "message": f"VAT number {bill['vendor_vat_number']} is registered in {prefix.group(1)}, "
+                                    f"but the supplier's country is {country}. Check the supplier's details.",
+                         "evidence": []})
 
     # INV-3 unknown vendor / lookalike name
     if not vendor:
@@ -207,3 +245,48 @@ def rule_checks(bill: dict, rules: list[dict], snapshot: dict, queue: list[dict]
     else:
         decision = "escalate" if amount > 500 else "hold"  # nothing in policy covers it
     return {"decision": decision, "matched": matched, "breaches": breaches}
+
+
+# ------------------------------------------------------------------ payroll
+
+MONTHS = {m: i for i, m in enumerate(["january", "february", "march", "april", "may", "june", "july", "august",
+                                      "september", "october", "november", "december"], 1)}
+OPEN_RUN = {"draft", "needs_approval", "to_pay", "scheduled", "sending"}
+
+
+def _run_month(run: dict) -> tuple[int, int] | None:
+    p = (run.get("period") or "").lower()
+    if m := re.match(r"(\d{4})-(\d{2})-\d{2}", p):
+        return int(m[1]), int(m[2])
+    if m := re.search(r"(" + "|".join(MONTHS) + r")\s+(\d{4})", p):
+        return int(m[2]), MONTHS[m[1]]
+    return None
+
+
+def payroll_findings(runs: list[dict]) -> list[dict]:
+    """Checks on Seapoint pay runs: a period paid twice, a run paid before its period, a changed payee account."""
+    findings, paid_by_month = [], {}
+    for r in runs:
+        if r["status"] in ("paid", "partially_paid") and _run_month(r):
+            paid_by_month.setdefault(_run_month(r), r)
+    for r in runs:
+        month = _run_month(r)
+        if r["status"] in OPEN_RUN and month in paid_by_month:
+            done = paid_by_month[month]
+            findings.append({"id": "PAY-1", "severity": "escalate", "run_id": r["id"], "amount": r["total"],
+                             "message": f"'{r['name']}' ({r['status']}, £{r['total']:,.2f}) is for {r['period']}, which was "
+                                        f"already paid in '{done['name']}' on {done['pay_date']}. Approving it pays the "
+                                        f"period twice."})
+        if r["status"] == "paid" and month and r.get("pay_date") and date.fromisoformat(r["pay_date"]) < date(*month, 1):
+            findings.append({"id": "PAY-2", "severity": "hold", "run_id": r["id"], "amount": r["total"],
+                             "message": f"'{r['name']}' was paid on {r['pay_date']}, before its period starts. "
+                                        f"That month shows two salary payments in the bank."})
+    accounts = {}
+    for r in sorted(runs, key=lambda r: r.get("created_at") or ""):
+        for emp_id, name, _net, last4 in r.get("employees", []):
+            if emp_id in accounts and accounts[emp_id] != last4:
+                findings.append({"id": "PAY-3", "severity": "escalate", "run_id": r["id"], "amount": None,
+                                 "message": f"{name}'s pay account changed from ..{accounts[emp_id]} to ..{last4} "
+                                            f"in '{r['name']}'. Verify with the employee directly."})
+            accounts[emp_id] = last4
+    return findings

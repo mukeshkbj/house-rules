@@ -289,7 +289,7 @@ if (P) {
   const salary = D.flagged_history.filter(t => /salary/i.test(t.description));
   const over = sum(salary.filter(t => t.date.slice(8) === "25"), t => t.amount);
   $("#bt-lede").textContent = salary.length && salary.length === D.flagged_history.length
-    ? `The new rule flags ${D.flagged_history.length} past payments. They are real: September salaries were paid twice, on the 18th and the 25th. That is ${gbp(over)} overpaid.`
+    ? `The new rule flags ${D.flagged_history.length} past payments. They are real: salaries were paid twice in September, on the 18th and the 25th (${gbp(over)}). Seapoint's payroll shows the October run was paid early, on 18 Sep.`
     : `The new rule flags ${D.flagged_history.length} past payments. Review them before relying on the rule.`;
   $("#bt-rows").innerHTML = D.flagged_history.map(t => `<tr><td class="mono">${esc(t.date)}</td><td>${esc(t.vendor_name)}</td><td class="num">${gbp(t.amount)}</td><td>${esc(t.description)}</td></tr>`).join("");
 }

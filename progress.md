@@ -62,3 +62,12 @@ Hackathon 2026-10-20, code freeze 20:20. Plan: House Rules (mine → guard → r
 - `python -m house_rules.review_new [--live]` reviews only unseen bill ids against the saved policy, writes data/reviews/, updates data/seen_bills.json and logs to the policy audit.
 - Verified: saved v40 from the UI (WeWork max 3000). The CLI reviewed 26, then 0 on the second run. 7/7 tests pass, including a new-bill test (legit Nordhaus November approved, lookalike "Nordhaus Studios Ltd" escalated).
 - Seapoint had no invoices newer than 14 Oct at 20:40. Refreshing data/raw is still manual (needs a token or a Claude session).
+
+## Seapoint features (21:1x)
+- Raw pulls from Seapoint: `data/raw/invoices.json` (all 39 invoices, with VAT and company numbers and matched transaction ids) and `data/raw/seapoint_extra.json` (69 participants, payment queue, card payments for open-invoice suppliers, 8 pay runs, cash and burn). `queue.json` removed.
+- Builder uses Seapoint participant ids. Identity comes from paid invoices via transaction id (Snowflake, Clearview, Deel company numbers). Name matching prefers the longest prefix (fixes AWS → "Amazon UK").
+- New checks: INV-7 (already paid invoice number), INV-8 (company or VAT number differs), INV-9 (VAT country ≠ supplier country, catches Meridian Translations), paid-on-receipt duplicate (catches HubSpot), card-payment duplicate (catches Lodgewood). Payroll: PAY-1 draft October run would pay October twice (£11,800), PAY-2 October run paid early on 18 Sep, PAY-3 pay account change.
+- Halberd, Meridian Translations and Lodgewood are known Seapoint suppliers, so they are no longer flagged as new. Only PyCon is still flagged.
+- Correction: the "September salaries paid twice" story is two salary runs in September because the October run was paid early (Seapoint payroll). Patch rationale, report and README are updated. The YouTube voiceover still says "paid twice".
+- `prompts/seapoint_pull.md` is the self-contained pull and review prompt for a scheduled Claude run. The schedule is not created yet; it needs the user's OK.
+- Verified: 7/7 tests, review_new shows PAY-1 and PAY-2, the app screenshot shows the Payroll checks section.

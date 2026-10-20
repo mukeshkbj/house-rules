@@ -14,7 +14,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-from . import seapoint
+from . import checks, seapoint
 from .engine import ROOT, Engine
 
 SEEN = ROOT / "data" / "seen_bills.json"
@@ -31,17 +31,21 @@ def run(source: str = "seapoint", live: bool = False, seen_path: Path = SEEN, ou
     new = [b for b in queue if b["bill_id"] not in seen]
 
     results = eng._map(lambda b: eng.review(b, queue), new)
+    payroll = [f for f in checks.payroll_findings(eng.snap.get("payroll_runs", [])) if f"{f['id']}:{f['run_id']}" not in seen]
     report = {"reviewed_at": datetime.now().isoformat(timespec="seconds"), "policy_v": eng.version,
               "mode": "live" if live else "offline", "new_bills": len(new), "already_seen": len(queue) - len(new),
               "decisions": [{"bill": b, **{k: r[k] for k in ("decision", "reason", "code_decision")},
-                             "checks": [f["id"] for f in r["invariants"]]} for b, r in zip(new, results)]}
-    if new:
+                             "checks": [f["id"] for f in r["invariants"]]} for b, r in zip(new, results)],
+              "payroll": payroll}
+    if new or payroll:
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / f"review_{report['reviewed_at'].replace(':', '')}.json").write_text(json.dumps(report, indent=1, default=str))
         counts = {d: sum(1 for x in results if x["decision"] == d) for d in ("approve", "hold", "escalate")}
-        eng.log("Guardian", "reviewed new bills", ", ".join(f"{v} {k}" for k, v in counts.items()))
+        eng.log("Guardian", "reviewed new bills", ", ".join(f"{v} {k}" for k, v in counts.items())
+                + (f"; {len(payroll)} payroll findings" if payroll else ""))
         eng.save_policy(policy_path)
-        seen_path.write_text(json.dumps(sorted(seen | {b["bill_id"] for b in new}), indent=1))
+        seen_path.write_text(json.dumps(sorted(seen | {b["bill_id"] for b in new}
+                                               | {f"{f['id']}:{f['run_id']}" for f in payroll}), indent=1))
     return report
 
 
@@ -55,3 +59,5 @@ if __name__ == "__main__":
     for d in rep["decisions"]:
         b = d["bill"]
         print(f"  {d['decision']:8s} {b['vendor_name'][:28]:28s} £{b['amount']:>10,.2f}  {d['reason'][:110]}")
+    for f in rep["payroll"]:
+        print(f"  {f['severity']:8s} PAYROLL {f['id']}  {f['message']}")

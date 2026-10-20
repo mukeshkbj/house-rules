@@ -21,7 +21,7 @@
     },
     "confidence": 0.94
   },
-  "rationale": "Nothing in the policy limited how often a supplier can bill, so a second in-range Fathom invoice looked routine. History shows Fathom, Remote People and Deel billing once per calendar month. Backtest flags 6 past payments: September salaries for Isla Fraser, Priya Chandra and Rhys Owen were each paid twice (18th and 25th), \u00a311,800 overpaid. Those are real findings, not false alarms.",
+  "rationale": "Nothing in the policy limited how often a supplier can bill, so a second in-range Fathom invoice looked routine. History shows Fathom, Remote People and Deel billing once per calendar month. Backtest flags 6 past payments: in September, Isla Fraser, Priya Chandra and Rhys Owen were each paid twice (18th and 25th), \u00a311,800 in one month. Seapoint's payroll shows why: the October run was paid early, on 18 Sep. Those are real findings, not false alarms.",
   "false_positives_in_history": 0,
   "true_positives_in_history": 6
 }
