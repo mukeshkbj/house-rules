@@ -32,6 +32,22 @@ Seapoint MCP (read-only allowlist)
                                   └────────────────────┘
 ```
 
+## Reviewing new invoices
+
+New bills are judged against the policy the founder signed, not a freshly mined one.
+
+1. **Sign the policy once.** In the app, approve rules (and edit limits if needed), then click **💾 Save policy**.
+   This writes `data/policy_seapoint.json` with the rules, version and audit log. **📂 Load saved** restores it.
+2. **Refresh the data.** Pull the latest unpaid invoices, queued payments and paid transactions from Seapoint into
+   `data/raw/`, then run `python data/build_seapoint_snapshot.py`. Paid history matters: it is how a new invoice for a
+   bill already collected by direct debit gets caught.
+3. **Review only what's new.** `python -m house_rules.review_new` (add `--live` for the Claude Guardian). Bills already
+   reviewed are skipped (`data/seen_bills.json`), each run writes `data/reviews/review_<time>.json`, and the run is
+   added to the policy's audit log. Nothing is paid or changed in Seapoint.
+
+Not automated yet: the Seapoint pull in step 2 needs a Seapoint MCP token (`python -m house_rules.seapoint --collect`)
+or a Claude session with the Seapoint connector. Steps 2–3 can then run on a schedule.
+
 ## Run it (offline, no keys needed)
 
 ```bash

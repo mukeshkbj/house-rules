@@ -56,3 +56,9 @@ Hackathon 2026-10-20, code freeze 20:20. Plan: House Rules (mine → guard → r
 - `demo/house-rules-demo.mp4`: 2:36, 1440×900, ElevenLabs voiceover (voice JBFqnCBsd6RMkjVDRZzb, eleven_multilingual_v2).
 - Rebuild: `python3 demo/make_vo.py` (clips + durations), then `NODE_PATH=~/.nvm/versions/node/v22.18.0/lib/node_modules ~/.nvm/versions/node/v22.18.0/bin/node demo/record_demo.js` (needs the app running on :8501), then the ffmpeg mix in this session (adelay per `demo/vo/timeline.json`).
 - ELEVENLABS_API_KEY is in `.env`. The key was pasted in chat, so rotate it after the event.
+
+## New invoices (20:40)
+- Saved policy: `Engine.save_policy/load_policy` → `data/policy_<source>.json` (rules, version, audit). The backtest re-runs on load. App sidebar has 💾 Save policy and 📂 Load saved.
+- `python -m house_rules.review_new [--live]` reviews only unseen bill ids against the saved policy, writes data/reviews/, updates data/seen_bills.json and logs to the policy audit.
+- Verified: saved v40 from the UI (WeWork max 3000). The CLI reviewed 26, then 0 on the second run. 7/7 tests pass, including a new-bill test (legit Nordhaus November approved, lookalike "Nordhaus Studios Ltd" escalated).
+- Seapoint had no invoices newer than 14 Oct at 20:40. Refreshing data/raw is still manual (needs a token or a Claude session).

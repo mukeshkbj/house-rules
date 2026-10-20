@@ -43,6 +43,15 @@ with st.sidebar:
         except FileNotFoundError as e:
             st.error(str(e))
             st.stop()
+    _e = st.session_state.eng
+    s1, s2 = st.columns(2)
+    if s1.button("💾 Save policy", width="stretch", disabled=not _e.approved(),
+                 help="Save approved rules, edits and the audit log. New bills are reviewed against this."):
+        st.toast(f"Saved policy v{_e.version} to {_e.save_policy().name}")
+    if s2.button("📂 Load saved", width="stretch", disabled=not _e.policy_path().exists(),
+                 help="Restore the last saved policy instead of mining again."):
+        _e.load_policy()
+        st.rerun()
     st.divider()
     st.markdown("**Safety design**")
     st.caption("• No agent can move money - release is a human action.\n"

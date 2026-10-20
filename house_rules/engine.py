@@ -35,6 +35,30 @@ class Engine:
         self.patches: list[dict] = []
         self.round = 0
 
+    # ------------------------------------------------------------ saved policy
+    def policy_path(self) -> Path:
+        return ROOT / "data" / f"policy_{self.source}.json"
+
+    def save_policy(self, path: Path | None = None) -> Path:
+        """Persist the signed policy so new bills are judged against it, not a freshly mined one."""
+        path = path or self.policy_path()
+        self.log("Founder", "saved policy", f"v{self.version}, {len(self.approved())} approved rules")
+        path.write_text(json.dumps({"source": self.source, "version": self.version,
+                                    "saved_at": datetime.now().isoformat(timespec="seconds"),
+                                    "rules": self.rules, "audit": self.audit}, indent=1, default=str))
+        return path
+
+    def load_policy(self, path: Path | None = None) -> bool:
+        path = path or self.policy_path()
+        if not path.exists():
+            return False
+        saved = json.loads(path.read_text())
+        self.rules, self.version, self.audit = saved["rules"], saved["version"], saved["audit"]
+        for r in self.rules:  # history may have grown since the policy was saved
+            r["backtest"] = self.backtest(r)
+        self.log("System", "loaded policy", f"v{self.version} saved {saved.get('saved_at', '?')}")
+        return True
+
     # ------------------------------------------------------------ helpers
     def log(self, actor: str, action: str, detail: str = ""):
         self.audit.append({"time": datetime.now().strftime("%H:%M:%S"), "policy_v": self.version,

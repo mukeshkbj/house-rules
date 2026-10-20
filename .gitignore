@@ -10,3 +10,6 @@ demo/shot.js
 data/miner_raw.txt
 data/miner_debug.log
 .DS_Store
+data/policy_*.json
+data/seen_bills.json
+data/reviews/
