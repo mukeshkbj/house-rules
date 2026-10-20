@@ -1,0 +1,27 @@
+{
+  "patch_type": "add",
+  "replaces_rule_id": null,
+  "rule": {
+    "id": "R-P01",
+    "name": "One invoice per payroll & staffing supplier per month",
+    "type": "frequency",
+    "scope": {
+      "category": "payroll & benefits"
+    },
+    "condition": "Each payroll, recruiter and employer-of-record payee should be paid once per calendar month",
+    "breach_condition": "A second invoice from the same payee in the same month",
+    "params": {
+      "per_month": 1
+    },
+    "action": "hold",
+    "evidence": {
+      "support_count": 41,
+      "counter_examples": 6,
+      "example_txn_ids": []
+    },
+    "confidence": 0.94
+  },
+  "rationale": "Nothing in the policy limited how often a supplier can bill, so a second in-range Fathom invoice looked routine. History shows Fathom, Remote People and Deel billing once per calendar month. Backtest flags 6 past payments: September salaries for Isla Fraser, Priya Chandra and Rhys Owen were each paid twice (18th and 25th), \u00a311,800 overpaid. Those are real findings, not false alarms.",
+  "false_positives_in_history": 0,
+  "true_positives_in_history": 6
+}

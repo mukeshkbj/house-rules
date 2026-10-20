@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+demo/raw/
+demo/frames/
+demo/arch_intro.mp4
+demo/house-rules-demo.mp4
+demo/shot.js
+data/miner_raw.txt
+data/miner_debug.log
+.DS_Store

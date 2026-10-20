@@ -1,0 +1,45 @@
+{
+  "_source": "seapoint-staging MCP, org Hackathon - PolicyAgent (Northstar Labs), pulled 2026-10-20: query_invoices is_paid=false, query_payments status=created",
+  "cash_balance": 2459109.84,
+  "monthly_burn_gross_3m_avg": 141388.62,
+  "invoices": [
+    ["evi_23nvzy1efb93qph8kj7bhnh306", "WeWork UK Ltd", 2950, "GBP", "WW-UK-2026-11-4B", "2026-10-13", "2026-11-01", "EMAIL_SCAN", "WeWork UK Ltd invoice WW-UK-2026-11-4B"],
+    ["evi_1zrbf88vg3bpn7y46hpzv9j1ng", "Wren & Fielding LLP", 2150, "GBP", "INV-WF-2291", "2026-10-11", "2026-11-10", "EMAIL_SCAN", "Wren & Fielding LLP invoice INV-WF-2291"],
+    ["evi_4w57v6qrjpkr56hdfq3mb27rje", "HubSpot UK Ltd", 2480, "GBP", "HS-2026-8120", "2026-10-08", "2026-11-07", "EMAIL_SCAN", "HubSpot UK Ltd invoice HS-2026-8120"],
+    ["evi_4hhjd13zgxs1tjr5ddvm4ygaes", "Clearview Media Ltd", 3400, "GBP", "CM-2026-114", "2026-10-07", "2026-11-06", "EMAIL_SCAN", "Clearview Media Ltd invoice CM-2026-114"],
+    ["evi_4067cwsh6q4k5w20a9ny0hbat7", "Halberd Security Ltd", 4250, "GBP", "HAL-3310", "2026-10-06", "2026-11-05", "EMAIL_SCAN", "Halberd Security Ltd invoice HAL-3310 (work done in September 2026)"],
+    ["evi_2tfw909v91r049jvcx55eetdky", "Meridian Translations BV", 1840, "EUR", "MT-2026-0442", "2026-10-02", "2026-11-01", "EMAIL_SCAN", "Meridian Translations BV invoice MT-2026-0442 (country GB, NL VAT number)"],
+    ["evi_5xpcwfp7s2xrm8c1dyckg1qh6x", "Connolly Accountants Ltd", 1800, "GBP", "CA-2026-0918", "2026-10-05", "2026-10-26", "EMAIL_SCAN", "Connolly Accountants Ltd invoice CA-2026-0918"],
+    ["evi_5w5e9aq2vtff0egyrkgbv4xsj9", "Harbourline Logistics Ltd", 612.48, "GBP", "HL-77120", "2026-10-04", "2026-10-25", "EMAIL_SCAN", "Harbourline Logistics Ltd invoice HL-77120"],
+    ["evi_6xt4bq3kag49wg92ak40rph92g", "Amazon Web Services UK Ltd", 7204.2, "GBP", "AWS-INV-45190", "2026-10-10", "2026-10-24", "EMAIL_SCAN", "Amazon Web Services UK Ltd invoice AWS-INV-45190"],
+    ["evi_4b1rms137v2b91qphkh2nf2gqd", "Slack Technologies Ltd", 486, "GBP", "SLK-7188", "2026-10-09", "2026-10-23", "EMAIL_SCAN", "Slack Technologies Ltd invoice SLK-7188"],
+    ["evi_1gxcbna8gmmv1dkmwzm2d3kfzk", "Northwind Facilities Ltd", 975, "GBP", "NW-88431", "2026-09-23", "2026-10-07", "EMAIL_SCAN", "Northwind Facilities Ltd invoice NW-88431"],
+    ["evi_07y5gw648700vz9qehp1p6tzvv", "Remote People Ltd", 33600, "GBP", "RP-2026-10-118", "2026-10-10", "2026-10-25", "EMAIL_SCAN", "Remote People Ltd invoice RP-2026-10-118 (net 33,400, VAT 200 at stated 20%)"],
+    ["evi_1cpfhxydzwqhxy5qq618jspwyz", "Clearview Media Ltd", 3400, "GBP", "CM-2026-114", "2026-10-07", "2026-11-06", "UPLOAD", "Clearview Media Ltd invoice CM-2026-114"],
+    ["evi_32t9rmxzv341gwfy2sdcjbbqmq", "Fathom Talent Partners Ltd", 14400, "GBP", "FTP-0931", "2026-10-06", "2026-10-20", "EMAIL_SCAN", "Fathom Talent Partners Ltd invoice FTP-0931"],
+    ["evi_3tpp8nwjcf65h90bm4aqh6cwkh", "PyCon UK Society", 135, "GBP", "PYC-26-1187", "2026-09-19", "2026-10-20", "EMPLOYEE_BOOKKEEPING_UPLOAD", "PyCon UK out-of-pocket expense paid personally by Isla Fraser, submitted for reimbursement"],
+    ["evi_5nkw49wtg8dx6eydszv18465pz", "Lodgewood Travel Ltd", 6300, "GBP", "LWT-55120", "2026-10-02", "2026-10-09", "EMAIL_SCAN", "Lodgewood Travel invoice LWT-55120"],
+    ["evi_7qzjc1xve4znxh8cn3zkwxkzgs", "Snowflake Computing UK Ltd", 21800, "GBP", "SNF-INV-2026-10", "2026-10-01", "2026-10-15", "EMAIL_FORWARD", "Snowflake invoice SNF-INV-2026-10"],
+    ["evi_58ggnx47jsva7tgt6mfjekqkpq", "Anthropic, PBC", 1049.62, "USD->GBP", "ANT-INV-2026-09-0412", "2026-10-01", "2026-10-10", "EMAIL_SCAN", "Anthropic invoice ANT-INV-2026-09-0412, USD 1,385.20"],
+    ["evi_4z63w55d5cjtsk1kkspte0jt5w", "Snowflake Computing UK Ltd", 21800, "GBP", "SNF-INV-2026-10", "2026-10-01", "2026-10-15", "EMAIL_SCAN", "Snowflake invoice SNF-INV-2026-10"],
+    ["evi_4pm2w6rp3fvg7txx5p8eej99m2", "Sentry", 2800, "GBP", "SEN-2026-10-4471", "2026-10-01", "2026-10-05", "EMAIL_SCAN", "Sentry invoice SEN-2026-10-4471"],
+    ["evi_3tq0ec1mzzs6he3bgg8323xd01", "Nordhaus Studio BV", 7671.29, "EUR->GBP", "NHS-2026-0142", "2026-10-01", "2026-10-19", "EMAIL_SCAN", "Nordhaus Studio BV invoice NHS-2026-0142, EUR 9,000, VAT reverse charged"],
+    ["evi_1afhafvhh0nw25g9fz77vzeb7a", "Northwind Facilities Ltd", 975, "GBP", "NW-88690", "2026-09-30", "2026-10-14", "EMAIL_SCAN", "Northwind Facilities Ltd invoice NW-88690"],
+    ["evi_782b5t8ez4rs0jtcwehs1m44jy", "Harrison & Webb Solicitors LLP", 2750, "GBP", "HW-2026-117", "2026-09-29", "2026-10-13", "EMAIL_SCAN", "Harrison & Webb Solicitors LLP fee note HW-2026-117"],
+    ["evi_2kz87fnbdtg1agwcw65n4z9b0b", "Meridian Insurance Brokers Ltd", 1240, "GBP", "MIB-2026-330", "2026-09-16", "2026-09-23", "EMAIL_SCAN", "Meridian Insurance Brokers debit note MIB-2026-330"],
+    ["evi_04bvwd4jjzhrc3c4ayp4f2vgfd", "Harbourline Logistics Ltd", 540, "GBP", "HL-76890", "2026-09-01", "2026-09-15", "EMAIL_SCAN", "Harbourline Logistics Ltd invoice HL-76890"]
+  ],
+  "payments": [
+    ["pi_32jwmyy7p76bhsv0skwb16pd1g", "WeWork UK Ltd", 2350, "GBP", "UNIT-4B rent", "2026-10-18", "beneficiary", null, null],
+    ["pi_21wce2r2qh1t9p9hyxgev6vpns", "Clearview Media Ltd", 3400, "GBP", "CM-2026-114", "2026-10-13", "scan", "..9047", "evi_4hhjd13zgxs1tjr5ddvm4ygaes"]
+  ],
+  "succeeded_payments": [
+    ["pi_11q7s6zpr5n2dbrkez49hqpek9", "WeWork UK Ltd", 1200, "INV-0042"],
+    ["pi_0jraknsf2gqqj5km519pefr1dv", "Jane Doyle (Contractor)", 350, "CONTRACT-MAR"]
+  ],
+  "payroll_payouts": [
+    ["pi_6aeygsmg6239r02ja5zcgv0dv7", "Priya Chandra", "emp_001", 3550],
+    ["pi_7j50nk5fn3mqgz0h9daq9d1rk0", "Rhys Owen", "emp_002", 3900],
+    ["pi_0628zwpk57fg7j6mdezekz8f0y", "Isla Fraser", "emp_001", 4350]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "patch_type": "add",
+  "replaces_rule_id": null,
+  "rule": {"id": "R-P01", "name": "One invoice per contractor per month", "type": "frequency",
+           "scope": {"category": "contractor"},
+           "condition": "Each contractor has billed exactly once per calendar month for six months",
+           "breach_condition": "A second invoice from the same contractor in the same month",
+           "params": {"per_month": 1}, "action": "hold",
+           "evidence": {"support_count": 12, "counter_examples": 0, "example_txn_ids": []}, "confidence": 0.94},
+  "rationale": "Nothing in the policy limited how often a vendor can bill, so a second, in-range invoice from a real contractor looked routine. Six months of history show exactly one invoice per contractor per month.",
+  "false_positives_in_history": 0
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>House Rules architecture</title>
+<style>
+  :root { --bg:#0E151C; --panel:#151F29; --ink:#E4EAF0; --muted:#94A2AF; --line:#2A3A4A; --accent:#7DAEE6; --ok:#62C48F; --warn:#E3AA44; --bad:#F2867C }
+  body { margin:0; width:1440px; height:900px; background:var(--bg); color:var(--ink); font-family:-apple-system,"Segoe UI",sans-serif; position:relative; overflow:hidden }
+  h1 { position:absolute; left:64px; top:40px; margin:0; font:800 40px/1 -apple-system,sans-serif }
+  .sub { position:absolute; left:64px; top:92px; color:var(--muted); font-size:19px }
+  .b { position:absolute; background:var(--panel); border:2px solid var(--line); border-radius:12px; padding:14px 18px; box-sizing:border-box; display:grid; gap:4px; align-content:center }
+  .b b { font-size:20px } .b span { color:var(--muted); font-size:15px; line-height:1.35 }
+  .src { border-color:var(--accent) } .agent { border-color:var(--accent); background:#18283A }
+  .human { border-color:var(--ok); background:#15301F } .code { border-color:var(--bad); background:#3A1916 } .log { border-color:var(--warn); background:#34270F }
+  svg { position:absolute; inset:0 }
+  .lbl { fill:var(--muted); font-size:14px }
+</style></head><body>
+<h1>House Rules · architecture</h1>
+<div class="sub">Read-only on Seapoint. Agents propose and attack; code has the last word on strictness; a human signs every change.</div>
+
+<svg width="1440" height="900">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7DAEE6"/></marker></defs>
+  <g stroke="#7DAEE6" stroke-width="2.5" fill="none" marker-end="url(#a)">
+    <path d="M290 330 L360 330"/>          <!-- seapoint -> collector -->
+    <path d="M590 330 L660 330"/>          <!-- collector -> miner -->
+    <path d="M890 330 L960 330"/>          <!-- miner -> founder approve -->
+    <path d="M1075 390 L1075 470"/>        <!-- founder -> guardian -->
+    <path d="M1190 530 L1250 530"/>        <!-- guardian -> release -->
+    <path d="M775 650 L775 590 L955 560"/> <!-- code -> guardian -->
+    <path d="M500 530 L955 520"/>          <!-- red team -> guardian -->
+    <path d="M1075 590 L1075 822 L475 822 L475 796"/> <!-- misses -> patcher -->
+    <path d="M360 730 L250 730 L250 870 L1422 870 L1422 330 L1200 330"/> <!-- patcher -> founder -->
+  </g>
+  <text class="lbl" x="868" y="250">proposed rules</text>
+  <text class="lbl" x="1085" y="440">approved rules · policy vN</text>
+  <text class="lbl" x="620" y="508">attack bills (in memory only)</text>
+  <text class="lbl" x="790" y="618">can only make stricter</text>
+  <text class="lbl" x="760" y="814">missed attacks</text>
+  <text class="lbl" x="640" y="862">patch + backtest → founder approves</text>
+</svg>
+
+<div class="b src" style="left:64px;top:250px;width:226px;height:160px"><b>Seapoint MCP</b><span>Transactions · unpaid invoices · queued payments · balances<br>read-only allowlist</span></div>
+<div class="b" style="left:360px;top:270px;width:230px;height:120px"><b>Collector</b><span>One snapshot of 187 payments and 26 queued bills</span></div>
+<div class="b agent" style="left:660px;top:255px;width:230px;height:150px"><b>⛏ Miner</b><span>Infers each supplier's amount range and payment day, with evidence and a backtest</span></div>
+<div class="b human" style="left:960px;top:270px;width:235px;height:120px"><b>Founder</b><span>Approves, rejects or edits rules</span></div>
+<div class="b agent" style="left:960px;top:470px;width:230px;height:120px"><b>🛡 Guardian</b><span>approve · hold · escalate, with a reason for every bill</span></div>
+<div class="b human" style="left:1250px;top:470px;width:150px;height:120px"><b>Founder</b><span>Releases payments</span></div>
+<div class="b code" style="left:620px;top:650px;width:310px;height:120px" ><b>Hard checks in code</b><span>duplicate · bank change · new vendor · £10k two approvers · injection · unknown payee</span></div>
+<div class="b agent" style="left:270px;top:470px;width:230px;height:120px"><b>⚔ Red Team</b><span>Duplicates, lookalikes, split invoices, fake approvals</span></div>
+<div class="b agent" style="left:360px;top:670px;width:230px;height:120px"><b>🩹 Patcher</b><span>Turns each miss into a proposed rule</span></div>
+<div class="b log" style="left:64px;top:470px;width:170px;height:120px"><b>Audit log</b><span>Every agent and human action, with the policy version</span></div>
+</body></html>
